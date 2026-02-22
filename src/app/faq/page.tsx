@@ -1,168 +1,350 @@
-import { Metadata } from 'next';
-import { motion } from 'framer-motion';
-import { HelpCircle, User, Briefcase, BookOpen, Globe } from 'lucide-react';
-import Link from 'next/link';
+"use client";
 
-// SEO & AEO Metadata for Answer Engines
-export const metadata: Metadata = {
-    title: 'Frequently Asked Questions | Muhammad Sajjad Rasool',
-    description: 'Detailed answers to common questions about Muhammad Sajjad Rasool, his freelance business development career, his journey as an author, and his professional background.',
-    openGraph: {
-        title: 'FAQs - Muhammad Sajjad Rasool',
-        description: 'Detailed answers to common questions about Muhammad Sajjad Rasool, his freelance business development career, his journey as an author, and his professional background.',
-    },
-};
+import { useState, useMemo, useRef, useEffect } from "react";
+import { faqData, FAQCategory } from "./faqData";
+import { ChevronDown, Search, ArrowUp, ChevronLeft } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
+import type { Metadata } from "next";
+
+// JSON-LD schema for AEO
+function FAQSchema() {
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqData.flatMap((section) =>
+            section.items.map((item) => ({
+                "@type": "Question",
+                name: item.q,
+                acceptedAnswer: {
+                    "@type": "Answer",
+                    text: item.a,
+                },
+            }))
+        ),
+    };
+    return (
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+    );
+}
+
+// Accordion Item
+function AccordionItem({ q, a, isOpen, onToggle }: { q: string; a: string; isOpen: boolean; onToggle: () => void }) {
+    return (
+        <div
+            className="rounded-xl bg-card transition-all duration-300 hover:-translate-y-0.5"
+            style={{ boxShadow: isOpen ? "0 6px 24px rgba(0,0,0,0.08)" : "0 2px 10px rgba(0,0,0,0.03)" }}
+        >
+            <button
+                onClick={onToggle}
+                className="w-full flex items-center justify-between gap-4 p-5 md:p-6 text-left group"
+                aria-expanded={isOpen}
+            >
+                <h3
+                    className="text-base md:text-lg font-semibold leading-snug pr-2"
+                    style={{ color: "var(--foreground)" }}
+                >
+                    {q}
+                </h3>
+                <motion.div
+                    animate={{ rotate: isOpen ? 180 : 0 }}
+                    transition={{ duration: 0.25 }}
+                    className="shrink-0"
+                >
+                    <ChevronDown size={20} style={{ color: "#C5A059" }} />
+                </motion.div>
+            </button>
+            <AnimatePresence initial={false}>
+                {isOpen && (
+                    <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.25, ease: "easeInOut" }}
+                        className="overflow-hidden"
+                    >
+                        <p
+                            className="px-5 md:px-6 pb-5 md:pb-6 text-sm md:text-base leading-relaxed"
+                            style={{ color: "var(--foreground)", opacity: 0.75 }}
+                        >
+                            {a}
+                        </p>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+        </div>
+    );
+}
 
 export default function FAQPage() {
-    const faqs = [
-        {
-            category: "Personal Life & Background",
-            icon: User,
-            items: [
-                {
-                    q: "Who is Muhammad Sajjad Rasool?",
-                    a: "Muhammad Sajjad Rasool is a globally recognized Freelance Business Development Manager, Consultant, and Author currently based remotely. Known for his intense strategic mindset and ability to bridge B2B gaps, he helps technology-driven companies scale rapidly.",
-                },
-                {
-                    q: "Where is Sajjad Rasool originally from?",
-                    a: "He originated from Karachi, Pakistan, where he developed an analytical foundation by completing a BS in Chemistry at Federal Urdu University. He later pivoted his scientific, detail-oriented mindset into global business development operations.",
-                }
-            ]
-        },
-        {
-            category: "The Author Journey",
-            icon: BookOpen,
-            items: [
-                {
-                    q: "What does Sajjad Rasool write about?",
-                    a: "His writings primarily focus on the 'philosophical and strategic' mechanics behind business development, B2B sales cycles, and startup growth. He frames rigid, logical systems through storytelling, allowing founders and CEOs to grasp robust operational scaling easily.",
-                },
-                {
-                    q: "Is Sajjad Rasool releasing a book?",
-                    a: "Yes, his upcoming publication, 'The Business Development Manual', is designed as a masterclass specifically catered to technical founders seeking to map and execute high-performing business development pipelines.",
-                }
-            ]
-        },
-        {
-            category: "Freelance & Business Development (Jobs)",
-            icon: Briefcase,
-            items: [
-                {
-                    q: "What services does Sajjad Rasool provide as a Freelance Business Development Manager?",
-                    a: "He provides end-to-end B2B pipeline engineering. This includes identifying strategic partnerships, executing GTM (Go-To-Market) strategies, optimizing lead generation funnels, and advising tech CEOs on negotiation and deal closure.",
-                },
-                {
-                    q: "What is his previous professional experience?",
-                    a: "Prior to his full-time freelance career, he served as a Senior Executive at INTERSYS LTD where he spearheaded Quality Assurance and engineered aggressive, high-converting landing pages for continuous marketing funnels.",
-                },
-                {
-                    q: "How does he approach B2B relationships?",
-                    a: "He treats business relationships akin to chemical bonds—requiring the right environment, energy, and mutually beneficial catalysts to form a strong, lasting union. Communication, meticulous process documentation, and profound mutual value form the core of his approach.",
-                }
-            ]
-        },
-        {
-            category: "General Industry Queries",
-            icon: Globe,
-            items: [
-                {
-                    q: "Why should a technical CEO hire a Business Development Manager?",
-                    a: "Technical founders excel in building the product but often lack the specialized network, sales psychology, and aggressive outreach strategy required to capture market share. A specialized business developer connects the incredible technical infrastructure with the capital and networks needed to grow it.",
-                },
-                {
-                    q: "What makes Sajjad's approach different from traditional sales?",
-                    a: "Instead of aggressive, low-conversion cold approaches, Sajjad focuses on 'Strategic Value Injection'. By understanding the client's deepest operational mechanics, he maps out how a partnership creates irreversible value, essentially making the sales process feel like a natural business expansion.",
-                }
-            ]
-        }
-    ];
+    const [searchQuery, setSearchQuery] = useState("");
+    const [activeCategory, setActiveCategory] = useState<string | null>(null);
+    const [openItems, setOpenItems] = useState<Set<string>>(new Set());
+    const [showBackToTop, setShowBackToTop] = useState(false);
+    const topRef = useRef<HTMLDivElement>(null);
 
-    // Answer Engine Optimization mapping for JSON-LD
-    const generateFAQSchema = () => {
-        return {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faqs.flatMap(section =>
-                section.items.map(item => ({
-                    "@type": "Question",
-                    "name": item.q,
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": item.a
-                    }
-                }))
-            )
-        };
+    // Back-to-top visibility
+    useEffect(() => {
+        const handle = () => setShowBackToTop(window.scrollY > 600);
+        window.addEventListener("scroll", handle, { passive: true });
+        return () => window.removeEventListener("scroll", handle);
+    }, []);
+
+    const toggleItem = (key: string) => {
+        setOpenItems((prev) => {
+            const next = new Set(prev);
+            if (next.has(key)) next.delete(key);
+            else next.add(key);
+            return next;
+        });
     };
 
+    // Filtered data
+    const filteredData = useMemo(() => {
+        const q = searchQuery.toLowerCase().trim();
+        let data = faqData;
+
+        if (activeCategory) {
+            data = data.filter((s) => s.category === activeCategory);
+        }
+
+        if (!q) return data;
+
+        return data
+            .map((section) => ({
+                ...section,
+                items: section.items.filter(
+                    (item) =>
+                        item.q.toLowerCase().includes(q) ||
+                        item.a.toLowerCase().includes(q)
+                ),
+            }))
+            .filter((section) => section.items.length > 0);
+    }, [searchQuery, activeCategory]);
+
+    const totalFAQs = faqData.reduce((sum, s) => sum + s.items.length, 0);
+    const visibleFAQs = filteredData.reduce((sum, s) => sum + s.items.length, 0);
+
     return (
-        <div className="min-h-screen bg-background dark:bg-forest pb-24 pt-32 px-4 selection:bg-[#C5A059] selection:text-[#1B3022]">
-            {/* JSON-LD Structured Data for AEO / Google Snippets */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema()) }}
-            />
+        <div
+            ref={topRef}
+            className="min-h-screen bg-background dark:bg-forest pb-24 pt-24 md:pt-32 px-4 selection:bg-[#C5A059] selection:text-[#1B3022]"
+        >
+            <FAQSchema />
 
             <div className="max-w-4xl mx-auto">
-                <header className="mb-16 text-center animate-in fade-in slide-in-from-bottom-4 duration-1000">
-                    <Link href="/" className="inline-flex items-center text-sm font-medium mb-8 hover:opacity-75 transition-opacity" style={{ color: "#C5A059" }}>
-                        ← Back to Portfolio
+                {/* Header */}
+                <header className="mb-12 text-center">
+                    <Link
+                        href="/"
+                        className="inline-flex items-center gap-1 text-sm font-medium mb-8 hover:opacity-75 transition-opacity"
+                        style={{ color: "#C5A059" }}
+                    >
+                        <ChevronLeft size={16} />
+                        Back to Portfolio
                     </Link>
-                    <span className="block text-sm uppercase tracking-widest mb-4" style={{ color: "#C5A059" }}>
-                        Answer Engine Optimization & Insights
+                    <span
+                        className="block text-xs uppercase tracking-widest mb-4"
+                        style={{ color: "#C5A059" }}
+                    >
+                        Answer Engine Optimization &amp; Insights
                     </span>
                     <h1
-                        className="text-4xl md:text-6xl font-bold mb-6"
-                        style={{ color: "#1B3022", fontFamily: "var(--font-playfair), serif" }}
+                        className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4"
+                        style={{
+                            color: "var(--foreground)",
+                            fontFamily: "var(--font-playfair), serif",
+                        }}
                     >
                         Frequently Asked Questions
                     </h1>
-                    <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed" style={{ color: "#1B3022", opacity: 0.8 }}>
-                        A comprehensive, structured guide to my background, author journey, and strategic business development methodologies. Optimized for clarity and digital discovery.
+                    <p
+                        className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed mb-2"
+                        style={{ color: "var(--foreground)", opacity: 0.8 }}
+                    >
+                        A comprehensive guide to Muhammad Sajjad Rasool&apos;s background,
+                        business development services, author journey, and professional
+                        methodologies.
                     </p>
+                    <span
+                        className="inline-block text-xs px-3 py-1 rounded-full mt-2"
+                        style={{
+                            backgroundColor: "rgba(197,160,89,0.15)",
+                            color: "#C5A059",
+                        }}
+                    >
+                        {totalFAQs} questions across {faqData.length} categories
+                    </span>
                 </header>
 
-                <div className="space-y-16">
-                    {faqs.map((section, idx) => {
-                        const Icon = section.icon;
-                        return (
-                            <section key={idx} className="animate-in fade-in slide-in-from-bottom-8 duration-1000 fill-mode-both" style={{ animationDelay: `${(idx + 1) * 150}ms` }}>
-                                <h2 className="text-2xl md:text-3xl font-bold mb-8 flex items-center gap-3 border-b pb-4" style={{ color: "#1B3022", borderColor: "rgba(27, 48, 34, 0.1)" }}>
-                                    <Icon size={28} style={{ color: "#C5A059" }} />
-                                    {section.category}
-                                </h2>
-                                <div className="space-y-6">
-                                    {section.items.map((item, itemIdx) => (
-                                        <article
-                                            key={itemIdx}
-                                            className="p-6 md:p-8 rounded-2xl bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-                                            style={{ boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)" }}
-                                        >
-                                            <h3 className="text-xl md:text-2xl font-bold mb-4" style={{ color: "#1B3022" }}>
-                                                {item.q}
-                                            </h3>
-                                            <p className="text-base md:text-lg leading-relaxed" style={{ color: "#1B3022", opacity: 0.8 }}>
-                                                {item.a}
-                                            </p>
-                                        </article>
-                                    ))}
-                                </div>
-                            </section>
-                        );
-                    })}
+                {/* Search */}
+                <div className="relative mb-8">
+                    <Search
+                        size={18}
+                        className="absolute left-4 top-1/2 -translate-y-1/2"
+                        style={{ color: "#C5A059" }}
+                    />
+                    <input
+                        type="text"
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        placeholder="Search across all frequently asked questions..."
+                        className="w-full pl-11 pr-4 py-3 md:py-4 rounded-xl border bg-card text-foreground outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all text-sm md:text-base"
+                        style={{ borderColor: "var(--border)" }}
+                        aria-label="Search FAQs"
+                    />
+                    {searchQuery && (
+                        <span
+                            className="absolute right-4 top-1/2 -translate-y-1/2 text-xs"
+                            style={{ color: "var(--foreground)", opacity: 0.5 }}
+                        >
+                            {visibleFAQs} result{visibleFAQs !== 1 ? "s" : ""}
+                        </span>
+                    )}
                 </div>
 
-                <div className="mt-24 text-center">
-                    <h3 className="text-2xl font-bold mb-6" style={{ color: "#1B3022", fontFamily: "var(--font-playfair), serif" }}>Have more questions?</h3>
+                {/* Category Tabs */}
+                <div className="flex flex-wrap gap-2 mb-10 justify-center">
+                    <button
+                        onClick={() => setActiveCategory(null)}
+                        className="px-3 py-1.5 rounded-full text-xs font-medium transition-all"
+                        style={{
+                            backgroundColor: !activeCategory
+                                ? "#C5A059"
+                                : "rgba(197,160,89,0.1)",
+                            color: !activeCategory ? "#1B3022" : "var(--foreground)",
+                        }}
+                    >
+                        All ({totalFAQs})
+                    </button>
+                    {faqData.map((section) => (
+                        <button
+                            key={section.category}
+                            onClick={() =>
+                                setActiveCategory(
+                                    activeCategory === section.category
+                                        ? null
+                                        : section.category
+                                )
+                            }
+                            className="px-3 py-1.5 rounded-full text-xs font-medium transition-all"
+                            style={{
+                                backgroundColor:
+                                    activeCategory === section.category
+                                        ? "#C5A059"
+                                        : "rgba(197,160,89,0.1)",
+                                color:
+                                    activeCategory === section.category
+                                        ? "#1B3022"
+                                        : "var(--foreground)",
+                            }}
+                        >
+                            {section.category} ({section.items.length})
+                        </button>
+                    ))}
+                </div>
+
+                {/* FAQ Content */}
+                {filteredData.length === 0 ? (
+                    <div className="text-center py-16">
+                        <p
+                            className="text-lg font-medium mb-2"
+                            style={{ color: "var(--foreground)" }}
+                        >
+                            No results found
+                        </p>
+                        <p style={{ color: "var(--foreground)", opacity: 0.6 }}>
+                            Try adjusting your search or browse all categories
+                        </p>
+                    </div>
+                ) : (
+                    <div className="space-y-12">
+                        {filteredData.map((section, sIdx) => {
+                            const Icon = section.icon;
+                            return (
+                                <section key={sIdx}>
+                                    <h2
+                                        className="text-xl md:text-2xl font-bold mb-6 flex items-center gap-3 border-b pb-3"
+                                        style={{
+                                            color: "var(--foreground)",
+                                            borderColor: "var(--border)",
+                                        }}
+                                    >
+                                        <Icon size={24} style={{ color: "#C5A059" }} />
+                                        {section.category}
+                                        <span
+                                            className="text-xs font-normal ml-auto"
+                                            style={{ color: "var(--foreground)", opacity: 0.4 }}
+                                        >
+                                            {section.items.length} questions
+                                        </span>
+                                    </h2>
+                                    <div className="space-y-3">
+                                        {section.items.map((item, iIdx) => {
+                                            const key = `${sIdx}-${iIdx}`;
+                                            return (
+                                                <AccordionItem
+                                                    key={key}
+                                                    q={item.q}
+                                                    a={item.a}
+                                                    isOpen={openItems.has(key)}
+                                                    onToggle={() => toggleItem(key)}
+                                                />
+                                            );
+                                        })}
+                                    </div>
+                                </section>
+                            );
+                        })}
+                    </div>
+                )}
+
+                {/* CTA */}
+                <div className="mt-20 text-center">
+                    <h3
+                        className="text-2xl font-bold mb-4"
+                        style={{
+                            color: "var(--foreground)",
+                            fontFamily: "var(--font-playfair), serif",
+                        }}
+                    >
+                        Have more questions?
+                    </h3>
+                    <p
+                        className="text-sm mb-6 max-w-md mx-auto"
+                        style={{ color: "var(--foreground)", opacity: 0.7 }}
+                    >
+                        I personally respond to every inquiry. Let&apos;s start a conversation about how I can help.
+                    </p>
                     <Link
                         href="/#contact"
-                        className="inline-flex items-center justify-center px-8 py-4 rounded-full font-medium text-lg transition-all"
-                        style={{ backgroundColor: "#1B3022", color: "#F5F2ED" }}
+                        className="inline-flex items-center justify-center px-8 py-4 rounded-full font-medium text-lg transition-all hover:opacity-90"
+                        style={{ backgroundColor: "var(--primary)", color: "var(--primary-foreground)" }}
                     >
                         Get In Touch
                     </Link>
                 </div>
             </div>
+
+            {/* Back to Top */}
+            <AnimatePresence>
+                {showBackToTop && (
+                    <motion.button
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 20 }}
+                        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                        className="fixed bottom-6 right-6 p-3 rounded-full shadow-lg z-50"
+                        style={{ backgroundColor: "#C5A059", color: "#1B3022" }}
+                        aria-label="Back to top"
+                    >
+                        <ArrowUp size={20} />
+                    </motion.button>
+                )}
+            </AnimatePresence>
         </div>
     );
 }

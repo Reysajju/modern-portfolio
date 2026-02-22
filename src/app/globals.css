@@ -707,3 +707,41 @@
 .line-clamp-2 { @apply overflow-hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
 .line-clamp-3 { @apply overflow-hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
 .line-clamp-4 { @apply overflow-hidden; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; }
+
+/* ========================================
+   PERFORMANCE OPTIMIZATIONS
+   ======================================== */
+
+/* Off-screen section rendering optimization */
+section[id] {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 100vh;
+}
+
+/* First section should always be visible */
+section[id="home"] {
+  content-visibility: visible;
+}
+
+/* Optimize animated elements */
+.hover-lift,
+[class*="animate-"] {
+  will-change: transform;
+}
+
+/* Image skeleton loading */
+.img-skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(197, 160, 89, 0.05) 0%,
+    rgba(197, 160, 89, 0.12) 50%,
+    rgba(197, 160, 89, 0.05) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* Optimize font loading */
+@font-face {
+  font-display: swap;
+}

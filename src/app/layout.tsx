@@ -24,22 +24,23 @@ export const metadata: Metadata = {
 
   // Basic SEO
   title: {
-    default: "Muhammad Sajjad Rasool | Business & Tech Consultant for Tech CEOs",
-    template: "%s | Sajjad Rasool"
+    default: "Muhammad Sajjad Rasool | Independent Author & Business Consultant",
+    template: "%s | Muhammad Sajjad Rasool"
   },
-  description: "Muhammad Sajjad Rasool - Freelance Business Development Manager & Author helping tech CEOs drive growth, scale operations, and build B2B partnerships. Based in Global / Remote.",
+  description: "Muhammad Sajjad Rasool - Independent Author of 26+ books spanning science fiction, horror, thriller & non-fiction. Also a Freelance Business Development Manager helping tech CEOs drive growth.",
   keywords: [
     "Sajjad Rasool",
     "Muhammad Sajjad Rasool",
+    "Independent Author",
+    "Science Fiction Author",
+    "Horror Author",
+    "Spiral Arms Series",
+    "Children of the Olive",
     "Business Development Manager",
     "Freelance Business Development",
-    "Author",
     "Tech Consultant",
-    "GTM Strategy",
     "B2B Relationships",
-    "Sales Strategy",
-    "Tech CEO Advisor",
-    "Growth Operations"
+    "Book Author Pakistan"
   ],
   authors: [{ name: "Muhammad Sajjad Rasool", url: "https://sajjad.escritura.site" }],
   creator: "Muhammad Sajjad Rasool",
@@ -66,11 +67,10 @@ export const metadata: Metadata = {
   // Icons
   icons: {
     icon: [
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/logo.svg", type: "image/svg+xml" },
     ],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
-    other: [{ rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#1B3022" }],
+    apple: [{ url: "/logo.svg", type: "image/svg+xml" }],
+    other: [{ rel: "mask-icon", url: "/logo.svg", color: "#1B3022" }],
   },
 
   // Manifest
@@ -82,8 +82,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://sajjad.escritura.site",
     siteName: "Sajjad Rasool Portfolio",
-    title: "Muhammad Sajjad Rasool | Business Development Manager & Author",
-    description: "Freelance Business Development Manager & Author driving growth through strategic partnerships and B2B linkages.",
+    title: "Muhammad Sajjad Rasool | Independent Author & Business Consultant",
+    description: "Independent Author of 26+ books spanning sci-fi, horror, thriller & non-fiction. Also a Business Development Manager driving growth through strategic partnerships.",
     images: [
       {
         url: "/og-image.png",
@@ -98,8 +98,8 @@ export const metadata: Metadata = {
   // Twitter
   twitter: {
     card: "summary_large_image",
-    title: "Muhammad Sajjad Rasool | Business & Tech Consultant",
-    description: "Independent Business & Tech Consultant helping tech CEOs start, grow, and scale businesses.",
+    title: "Muhammad Sajjad Rasool | Independent Author",
+    description: "Independent Author of 26+ books. Science fiction, horror, thriller & political non-fiction. Business Development Manager.",
     images: ["/og-image.png"],
     creator: "@sajjadr742",
   },
@@ -209,7 +209,7 @@ export default function RootLayout({
               "@type": "Person",
               "name": "Muhammad Sajjad Rasool",
               "alternateName": "Sajjad Rasool",
-              "jobTitle": "Freelance Business Development Manager & Author",
+              "jobTitle": "Independent Author & Business Development Manager",
               "description": "Specializing in crafting powerful B2B partnerships and driving strategic growth for tech-driven companies. Documenting experiences, insights, and philosophical thoughts on business scaling and personal journey through upcoming books and articles.",
               "email": "Sajjadr742@gmail.com",
               "address": {

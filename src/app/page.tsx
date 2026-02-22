@@ -161,6 +161,7 @@ function MobileNav({
     { id: "arsenal", label: "Arsenal", icon: Swords },
     { id: "engine", label: "Engine", icon: PenTool },
     { id: "contact", label: "Contact", icon: Mail },
+    { id: "faq", label: "FAQ", icon: HelpCircle },
   ];
 
   return (
@@ -242,6 +243,7 @@ function DesktopNav({
     { id: "arsenal", label: "Arsenal", icon: Swords },
     { id: "engine", label: "Engine", icon: PenTool },
     { id: "contact", label: "Contact", icon: Mail },
+    { id: "faq", label: "FAQ", icon: HelpCircle },
   ];
 
   return (
@@ -412,7 +414,7 @@ export default function Portfolio() {
     const handleScroll = () => {
       if (isNavigating) return;
       const scrollPosition = window.scrollY + window.innerHeight / 3;
-      const sections = ["home", "archive", "library", "arsenal", "engine", "contact"];
+      const sections = ["home", "archive", "library", "arsenal", "engine", "contact", "faq"];
 
       for (const section of sections) {
         const element = sectionRefs.current[section];
@@ -431,6 +433,10 @@ export default function Portfolio() {
   }, [isNavigating]);
 
   const scrollToSection = (sectionId: string) => {
+    if (sectionId === "faq") {
+      window.location.href = "/faq";
+      return;
+    }
     const element = sectionRefs.current[sectionId];
     if (element) {
       setIsNavigating(true);
@@ -519,10 +525,11 @@ export default function Portfolio() {
             >
               <Image
                 src="/images/Sajjad/sajjad (1).jpeg"
-                alt="Muhammad Sajjad Rasool"
+                alt="Muhammad Sajjad Rasool — Freelance Business Development Manager and Author based in Karachi, Pakistan"
                 fill
                 className="object-cover"
                 priority
+                sizes="(max-width: 768px) 112px, (max-width: 1024px) 144px, 176px"
               />
             </motion.div>
           </motion.figure>
@@ -623,6 +630,34 @@ export default function Portfolio() {
               View Experience
             </motion.button>
           </motion.div>
+
+          {/* What I Do Pillars */}
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            animate="visible"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4 mt-10 max-w-3xl mx-auto"
+          >
+            {[
+              { icon: Target, title: "Strategic Growth", desc: "Architecting B2B pipelines that drive sustainable revenue and forge lasting partnerships." },
+              { icon: PenTool, title: "Author & Storyteller", desc: "Documenting the journey of business building through compelling articles and books." },
+              { icon: Zap, title: "Tech Execution", desc: "Engineering high-converting landing pages and optimizing digital funnels for maximum impact." },
+            ].map((pillar, i) => {
+              const PIcon = pillar.icon;
+              return (
+                <motion.div
+                  key={i}
+                  variants={scaleIn}
+                  className="p-4 rounded-xl text-center"
+                  style={{ backgroundColor: "rgba(27, 48, 34, 0.05)" }}
+                >
+                  <PIcon size={22} className="mx-auto mb-2" style={{ color: "#C5A059" }} />
+                  <h3 className="text-sm font-bold mb-1" style={{ color: "var(--foreground)" }}>{pillar.title}</h3>
+                  <p className="text-xs leading-relaxed" style={{ color: "var(--foreground)", opacity: 0.7 }}>{pillar.desc}</p>
+                </motion.div>
+              );
+            })}
+          </motion.div>
         </motion.div>
 
         {/* Scroll Indicator */}
@@ -673,6 +708,9 @@ export default function Portfolio() {
             >
               The Archive
             </h2>
+            <p className="text-sm md:text-base mt-3 leading-relaxed max-w-2xl" style={{ color: "var(--foreground)", opacity: 0.7 }}>
+              A timeline of the professional experiences, education, and key milestones that shaped my approach to business development and strategic growth.
+            </p>
           </motion.header>
 
           {/* Timeline */}
@@ -730,8 +768,8 @@ export default function Portfolio() {
                       {exp.description}
                     </p>
                     {exp.image && (
-                      <div className="relative w-full h-72 md:h-[450px] mb-4 rounded-xl overflow-hidden shadow-md group border border-border/50">
-                        <Image src={exp.image} alt={exp.role} fill className="object-cover object-[center_15%] transition-transform duration-700 ease-in-out group-hover:scale-105" />
+                      <div className="relative w-full mb-4 rounded-xl overflow-hidden shadow-md group border border-border/50">
+                        <Image src={exp.image} alt={exp.role} width={800} height={600} className="w-full h-auto object-contain transition-transform duration-700 ease-in-out group-hover:scale-105" sizes="(max-width: 768px) 100vw, 800px" loading="lazy" />
                       </div>
                     )}
                     <div className="flex flex-wrap gap-2">
@@ -803,8 +841,8 @@ export default function Portfolio() {
                 Upcoming Publication
               </p>
               <div className="flex flex-col md:flex-row gap-6 items-center">
-                <div className="relative w-full md:w-1/3 aspect-[3/4] md:h-80 rounded-xl overflow-hidden shadow-2xl group border border-border/20">
-                  <Image src="/images/Sajjad/sajjad (8).jpeg" alt="Library Book Cover" fill className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105" />
+                <div className="relative w-full md:w-1/3 rounded-xl overflow-hidden shadow-2xl group border border-border/20 flex items-center">
+                  <Image src="/images/Sajjad/sajjad (8).jpeg" alt="The Business Development Manual — Upcoming Publication by Muhammad Sajjad Rasool" width={400} height={533} className="w-full h-auto object-contain transition-transform duration-700 ease-in-out group-hover:scale-105" sizes="(max-width: 768px) 100vw, 33vw" loading="lazy" />
                 </div>
                 <div className="w-full md:w-2/3">
                   <p className="text-sm md:text-base leading-relaxed mb-4" style={{ color: "var(--background)", opacity: 0.8 }}>
@@ -974,8 +1012,8 @@ export default function Portfolio() {
                 transition={{ duration: 0.3 }}
               >
                 {/* Article Image */}
-                <div className="relative w-full md:w-2/5 aspect-[16/9] md:aspect-auto md:h-full min-h-[220px] rounded-lg overflow-hidden shrink-0">
-                  <Image src={article.image} alt={article.title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div className="relative w-full md:w-2/5 rounded-lg overflow-hidden shrink-0 flex items-center">
+                  <Image src={article.image} alt={article.title} width={600} height={400} className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105" sizes="(max-width: 768px) 100vw, 40vw" loading="lazy" />
                 </div>
 
                 {/* Article Content */}
@@ -1041,6 +1079,9 @@ export default function Portfolio() {
               <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6" style={{ color: "var(--foreground)" }}>
                 Let&apos;s Build Something Together
               </h3>
+              <p className="mb-3 leading-relaxed text-sm md:text-base" style={{ color: "var(--foreground)", opacity: 0.8 }}>
+                Whether you&apos;re a startup founder seeking your first strategic partnership or an established company looking to accelerate B2B growth, I bring a unique blend of analytical thinking and creative storytelling to every engagement.
+              </p>
               <p className="mb-6 md:mb-8 leading-relaxed text-sm md:text-base" style={{ color: "var(--foreground)", opacity: 0.8 }}>
                 I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
               </p>
@@ -1184,20 +1225,39 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer
-        className="py-8 md:py-12 px-4 text-center border-t box-border"
+        className="py-12 md:py-16 px-4 border-t box-border"
         style={{ backgroundColor: "#1B3022", borderColor: "rgba(197, 160, 89, 0.1)" }}
       >
-        <div className="max-w-5xl mx-auto flex flex-col items-center">
-          <Link href="/faq" className="mb-6 inline-flex items-center gap-2 px-6 py-2 rounded-full border border-opacity-30 transition-all hover:bg-opacity-10" style={{ borderColor: "#C5A059", color: "#F5F2ED" }}>
-            <HelpCircle size={16} style={{ color: "#C5A059" }} />
-            Frequently Asked Questions (FAQ)
-          </Link>
-          <p className="text-xs md:text-sm" style={{ color: "var(--background)", opacity: 0.6 }}>
-            © {new Date().getFullYear()} Muhammad Sajjad Rasool. All rights reserved.
-          </p>
-          <p className="text-xs mt-3" style={{ color: "#C5A059", opacity: 0.8 }}>
-            Freelance Business Development Manager | Author
-          </p>
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-10 text-left">
+            {/* Brand */}
+            <div>
+              <h4 className="text-lg font-bold mb-3" style={{ color: "#F5F2ED", fontFamily: "var(--font-playfair), serif" }}>Muhammad Sajjad Rasool</h4>
+              <p className="text-xs leading-relaxed" style={{ color: "#F5F2ED", opacity: 0.6 }}>Freelance Business Development Manager & Author. Crafting strategic B2B partnerships and sharing the journey through compelling storytelling.</p>
+            </div>
+            {/* Quick Links */}
+            <div>
+              <h5 className="text-sm font-semibold mb-3 uppercase tracking-wider" style={{ color: "#C5A059" }}>Quick Links</h5>
+              <ul className="space-y-2">
+                {[{ l: "Experience", h: "#archive" }, { l: "Books & Projects", h: "#library" }, { l: "Skills", h: "#arsenal" }, { l: "Articles", h: "#engine" }, { l: "FAQ", h: "/faq" }].map(link => (
+                  <li key={link.l}><Link href={link.h} className="text-xs hover:opacity-100 transition-opacity" style={{ color: "#F5F2ED", opacity: 0.6 }}>{link.l}</Link></li>
+                ))}
+              </ul>
+            </div>
+            {/* Connect */}
+            <div>
+              <h5 className="text-sm font-semibold mb-3 uppercase tracking-wider" style={{ color: "#C5A059" }}>Connect</h5>
+              <ul className="space-y-2">
+                <li><Link href="#contact" className="text-xs hover:opacity-100 transition-opacity" style={{ color: "#F5F2ED", opacity: 0.6 }}>Get In Touch</Link></li>
+                <li><Link href="/blog" className="text-xs hover:opacity-100 transition-opacity" style={{ color: "#F5F2ED", opacity: 0.6 }}>Blog</Link></li>
+                <li><Link href="/faq" className="text-xs hover:opacity-100 transition-opacity" style={{ color: "#F5F2ED", opacity: 0.6 }}>FAQ ({'>'}200 Answers)</Link></li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-t pt-6 text-center" style={{ borderColor: "rgba(197, 160, 89, 0.15)" }}>
+            <p className="text-xs" style={{ color: "#F5F2ED", opacity: 0.5 }}>© {new Date().getFullYear()} Muhammad Sajjad Rasool. All rights reserved.</p>
+            <p className="text-xs mt-2" style={{ color: "#C5A059", opacity: 0.7 }}>Freelance Business Development Manager | Author | B2B Growth Strategist</p>
+          </div>
         </div>
       </footer>
     </div>
