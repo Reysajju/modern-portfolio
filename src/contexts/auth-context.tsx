@@ -31,11 +31,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null)
   const [isLoading, setIsLoading] = useState(true)
   const router = useRouter()
+  const [supabaseAvailable, setSupabaseAvailable] = useState(true)
 
   const refreshUser = async () => {
     try {
       const { data: { session } } = await supabase.auth.getSession()
-      
+
       if (session?.user) {
         // Create user object with admin check based on email
         const userProfile: User = {
@@ -58,26 +59,49 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const initAuth = async () => {
       setIsLoading(true)
-      await refreshUser()
-      setIsLoading(false)
+      try {
+        await refreshUser()
+        setSupabaseAvailable(true)
+      } catch (error) {
+        console.error('Supabase not configured:', error)
+        setSupabaseAvailable(false)
+        setUser(null)
+      } finally {
+        setIsLoading(false)
+      }
     }
 
     initAuth()
 
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event) => {
-      if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') {
-        await refreshUser()
-      } else if (event === 'SIGNED_OUT') {
-        setUser(null)
+    let subscription: { unsubscribe: () => void } | null = null
+
+    if (supabaseAvailable) {
+      try {
+        const { data: { subscription: sub } } = supabase.auth.onAuthStateChange(async (event) => {
+          if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') {
+            await refreshUser()
+          } else if (event === 'SIGNED_OUT') {
+            setUser(null)
+          }
+        })
+        subscription = sub
+      } catch (error) {
+        console.error('Error setting up auth listener:', error)
       }
-    })
+    }
 
     return () => {
-      subscription.unsubscribe()
+      if (subscription) {
+        subscription.unsubscribe()
+      }
     }
-  }, [])
+  }, [supabaseAvailable])
 
   const signIn = async (email: string, password: string) => {
+    if (!supabaseAvailable) {
+      return { error: new Error('Authentication is not available. Please configure Supabase.') }
+    }
+
     try {
       const { error } = await supabase.auth.signInWithPassword({
         email,
@@ -96,6 +120,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }
 
   const signUp = async (email: string, password: string, fullName?: string) => {
+    if (!supabaseAvailable) {
+      return { error: new Error('Authentication is not available. Please configure Supabase.') }
+    }
+
     try {
       const { error } = await supabase.auth.signUp({
         email,
@@ -118,7 +146,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }
 
   const signOut = async () => {
-    await supabase.auth.signOut()
+    if (supabaseAvailable) {
+      await supabase.auth.signOut()
+    }
     setUser(null)
     router.push('/login')
   }

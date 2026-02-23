@@ -56,12 +56,28 @@ export default function LibraryPage() {
   const fetchBooks = async () => {
     try {
       const response = await fetch('/api/books?published=true')
+
+      if (!response.ok) {
+        throw new Error(`Failed to fetch books: ${response.status}`)
+      }
+
       const data = await response.json()
+
+      // Validate that data is an array
+      if (!Array.isArray(data)) {
+        console.error('Invalid data format received from API:', data)
+        setBooks([])
+        return
+      }
+
       setBooks(data)
+
+      // Extract unique categories
       const uniqueCategories = [...new Set(data.map((book: Book) => book.category).filter(Boolean))]
       setCategories(uniqueCategories as string[])
     } catch (error) {
       console.error('Error fetching books:', error)
+      setBooks([])
     } finally {
       setIsLoading(false)
     }
