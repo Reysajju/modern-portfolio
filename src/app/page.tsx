@@ -552,7 +552,7 @@ export default function Portfolio() {
             </motion.p>
             <h1
               className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight leading-none"
-              style={{ color: "#1B3022", fontFamily: "var(--font-playfair), serif" }}
+              style={{ color: "var(--foreground)", fontFamily: "var(--font-playfair), serif" }}
               itemProp="name"
             >
               <span className="block">Muhammad</span>
@@ -777,7 +777,7 @@ export default function Portfolio() {
                         <span
                           key={i}
                           className="px-2 md:px-3 py-1 text-xs rounded-full"
-                          style={{ backgroundColor: "rgba(197, 160, 89, 0.15)", color: "#1B3022" }}
+                          style={{ backgroundColor: "rgba(197, 160, 89, 0.15)", color: "var(--foreground)" }}
                         >
                           {tag}
                         </span>
@@ -834,7 +834,7 @@ export default function Portfolio() {
               style={{ backgroundColor: "rgba(197, 160, 89, 0.1)", border: "1px solid rgba(197, 160, 89, 0.2)" }}
               whileHover={{ boxShadow: "0 0 30px rgba(197, 160, 89, 0.15)" }}
             >
-              <h4 className="text-xl md:text-2xl font-bold mb-2" style={{ color: "var(--background)" }}>
+              <h4 className="text-xl md:text-2xl font-bold mb-2" style={{ color: "#F5F2ED" }}>
                 The Business Development Manual
               </h4>
               <p className="text-xs md:text-sm mb-4" style={{ color: "#C5A059" }}>
@@ -845,10 +845,10 @@ export default function Portfolio() {
                   <Image src="/images/Sajjad/sajjad (8).jpeg" alt="The Business Development Manual — Upcoming Publication by Muhammad Sajjad Rasool" width={400} height={533} className="w-full h-auto object-contain transition-transform duration-700 ease-in-out group-hover:scale-105" sizes="(max-width: 768px) 100vw, 33vw" loading="lazy" />
                 </div>
                 <div className="w-full md:w-2/3">
-                  <p className="text-sm md:text-base leading-relaxed mb-4" style={{ color: "var(--background)", opacity: 0.8 }}>
+                  <p className="text-sm md:text-base leading-relaxed mb-4" style={{ color: "#F5F2ED", opacity: 0.8 }}>
                     A comprehensive, tactical guide specifically meant for technical founders and CEOs on how to build, scale, and maintain a high-performing business development pipeline. Synthesizes deep industry insights with actionable processes.
                   </p>
-                  <p className="text-sm md:text-base leading-relaxed" style={{ color: "var(--background)", opacity: 0.8 }}>
+                  <p className="text-sm md:text-base leading-relaxed" style={{ color: "#F5F2ED", opacity: 0.8 }}>
                     This masterclass in written format chronicles firsthand strategies on breaking into Fortune 500 networks and fostering relationships that yield million-dollar contracts.
                   </p>
                 </div>
@@ -868,8 +868,8 @@ export default function Portfolio() {
                 style={{ backgroundColor: "rgba(245, 242, 237, 0.05)", border: "1px solid rgba(197, 160, 89, 0.1)" }}
                 whileHover={{ backgroundColor: "rgba(245, 242, 237, 0.1)", x: 4 }}
               >
-                <h4 className="font-bold mb-1" style={{ color: "var(--background)" }}>Browse All 26 Books</h4>
-                <p className="text-sm" style={{ color: "var(--background)", opacity: 0.6 }}>Free ebooks and paperbacks — science fiction, horror, thrillers, and more</p>
+                <h4 className="font-bold mb-1" style={{ color: "#F5F2ED" }}>Browse All 26 Books</h4>
+                <p className="text-sm" style={{ color: "#F5F2ED", opacity: 0.6 }}>Free ebooks and paperbacks — science fiction, horror, thrillers, and more</p>
               </motion.div>
             </Link>
           </motion.div>
@@ -895,7 +895,7 @@ export default function Portfolio() {
             </span>
             <h2
               className="text-3xl md:text-5xl lg:text-6xl font-bold mt-2"
-              style={{ color: "#1B3022", fontFamily: "var(--font-playfair), serif" }}
+              style={{ color: "var(--foreground)", fontFamily: "var(--font-playfair), serif" }}
             >
               The Arsenal
             </h2>
@@ -929,7 +929,7 @@ export default function Portfolio() {
                   </div>
                   <div className="flex flex-wrap gap-2 mt-3">
                     {skill.items.map((item, i) => (
-                      <span key={i} className="px-2 md:px-3 py-1 text-xs rounded-full" style={{ backgroundColor: "rgba(27, 48, 34, 0.05)", color: "#1B3022" }}>
+                      <span key={i} className="px-2 md:px-3 py-1 text-xs rounded-full" style={{ backgroundColor: "rgba(27, 48, 34, 0.05)", color: "var(--foreground)" }}>
                         {item}
                       </span>
                     ))}
@@ -986,7 +986,7 @@ export default function Portfolio() {
             </span>
             <h2
               className="text-3xl md:text-5xl lg:text-6xl font-bold mt-2"
-              style={{ color: "#1B3022", fontFamily: "var(--font-playfair), serif" }}
+              style={{ color: "var(--foreground)", fontFamily: "var(--font-playfair), serif" }}
             >
               The Engine
             </h2>
@@ -1067,7 +1067,7 @@ export default function Portfolio() {
             </span>
             <h2
               className="text-3xl md:text-5xl lg:text-6xl font-bold mt-2"
-              style={{ color: "#1B3022", fontFamily: "var(--font-playfair), serif" }}
+              style={{ color: "var(--foreground)", fontFamily: "var(--font-playfair), serif" }}
             >
               Get In Touch
             </h2>
