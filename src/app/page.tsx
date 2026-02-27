@@ -117,9 +117,9 @@ function SponsorBanner({ position = "top" }: { position?: "top" | "inline" }) {
   if (position === "top") {
     return (
       <div className="w-full bg-accent text-accent-foreground py-2 text-center text-xs md:text-sm font-medium tracking-wide z-50 relative">
-        <span className="opacity-80">Sponsored by </span>
-        <strong>Tech Innovators Hub</strong>
-        <span className="mx-2 opacity-50">•</span>
+        <span className="opacity-80 dark:text-forest">Sponsored by </span>
+        <strong className="dark:text-forest">Tech Innovators Hub</strong>
+        <span className="mx-2 opacity-50 dark:text-forest">•</span>
         <a href="#" className="underline underline-offset-4 decoration-accent-foreground/30 hover:decoration-accent-foreground transition-all">Discover more</a>
       </div>
     );
@@ -207,7 +207,7 @@ function MobileNav({
                     }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    <Icon size={24} style={{ color: isActive ? "var(--accent)" : "var(--foreground)" }} />
+                    <Icon size={24} style={{ color: isActive ? "var(--accent)" : "var(--primary-foreground)" }} />
                     <span className="text-lg font-medium">{item.label}</span>
                   </motion.button>
                 );
@@ -283,8 +283,8 @@ function DesktopNav({
               )}
               <Icon
                 size={18}
-                className="relative z-10"
-                style={{ color: isActive ? "var(--primary)" : "var(--primary-foreground)" }}
+                style={{ color: isActive ? "var(--primary)" : "#F5F2ED" }}
+                className={`relative z-10 transition-colors ${!isActive ? "opacity-60 hover:opacity-100" : ""}`}
               />
               <AnimatePresence>
                 {isActive && (
@@ -929,7 +929,7 @@ export default function Portfolio() {
                   </div>
                   <div className="flex flex-wrap gap-2 mt-3">
                     {skill.items.map((item, i) => (
-                      <span key={i} className="px-2 md:px-3 py-1 text-xs rounded-full" style={{ backgroundColor: "rgba(27, 48, 34, 0.05)", color: "var(--foreground)" }}>
+                      <span key={i} className="px-2 md:px-3 py-1 text-xs rounded-full border border-border/10 transition-colors" style={{ backgroundColor: "rgba(197, 160, 89, 0.1)", color: "var(--foreground)" }}>
                         {item}
                       </span>
                     ))}

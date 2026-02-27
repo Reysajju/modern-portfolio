@@ -214,9 +214,11 @@ export default function FAQPage() {
                         style={{
                             backgroundColor: !activeCategory
                                 ? "#C5A059"
-                                : "rgba(197,160,89,0.1)",
+                                : "rgba(197,160,89,0.15)",
                             color: !activeCategory ? "#1B3022" : "var(--foreground)",
+                            borderColor: !activeCategory ? "transparent" : "var(--border)"
                         }}
+                        className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${!activeCategory ? "" : "border"}`}
                     >
                         All ({totalFAQs})
                     </button>
@@ -235,12 +237,14 @@ export default function FAQPage() {
                                 backgroundColor:
                                     activeCategory === section.category
                                         ? "#C5A059"
-                                        : "rgba(197,160,89,0.1)",
+                                        : "rgba(197,160,89,0.15)",
                                 color:
                                     activeCategory === section.category
                                         ? "#1B3022"
                                         : "var(--foreground)",
+                                borderColor: activeCategory === section.category ? "transparent" : "var(--border)"
                             }}
+                            className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${activeCategory === section.category ? "" : "border"}`}
                         >
                             {section.category} ({section.items.length})
                         </button>
