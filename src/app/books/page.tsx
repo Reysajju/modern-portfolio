@@ -29,6 +29,7 @@ interface Book {
     price: string;
     format: string;
     coverColor: string; // tailwind accent color class
+    coverExt?: string; // file extension if not jpg
     luluUrl: string;
 }
 
@@ -209,6 +210,17 @@ const books: Book[] = [
 
     // === STANDALONE BOOKS ===
     {
+        slug: "the-system-as-suspect",
+        title: "The System As Suspect",
+        description: "The terrifying distillation of 3.5 million pages and the administrative erasure of Jeffrey Epstein.",
+        genre: "Investigative Non-Fiction",
+        price: "Free",
+        format: "PDF",
+        coverColor: "red",
+        coverExt: "png",
+        luluUrl: "https://www.lulu.com/search?page=1&q=The+System+As+Suspect+Sajjad+Rasool",
+    },
+    {
         slug: "the-peshawar-protocol",
         title: "The Peshawar Protocol",
         description: "The Da Vinci Code meets The Three-Body Problem — a gritty, high-stakes sci-fi thriller.",
@@ -380,7 +392,7 @@ function BookCard({ book }: { book: Book }) {
                 {/* Cover Image */}
                 <div className="relative aspect-[2/3] overflow-hidden">
                     <Image
-                        src={`/books/${book.slug}.jpg`}
+                        src={`/books/${book.slug}.${book.coverExt || "jpg"}`}
                         alt={`${book.title} Book Cover`}
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
