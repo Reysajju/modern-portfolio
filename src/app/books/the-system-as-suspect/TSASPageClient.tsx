@@ -26,76 +26,127 @@ const CHAPTERS = [
         num: 1,
         title: "THE BROOKLYN FOUNDATION",
         years: "1953–1982",
-        description: "The early years and the formation of the operative. Mapping the initial connections that built the infrastructure.",
+        description: "The architectural origins. How a boy from Bedford Avenue transformed the Herbert N. Straus mansion into a 'Financial Panopticon'—a sensor array of surveillance designed to capture the Upper East Side elite.",
         icon: Building2,
         image: "/books/tsas/chapter-1.png",
-        color: "from-blue-600/20 to-transparent"
+        color: "from-blue-600/20 to-transparent",
+        evidenceId: "EVD-BK-001"
     },
     {
         num: 2,
         title: "THE FINANCIAL FACADE",
         years: "1982–1991",
-        description: "Decoding 3.5 million pages of financial ledgers. How Wall Street banks laundered reputation and capital.",
+        description: "The era of J. Epstein & Co. Decoding how the 'billionaires only' myth allowed for the leveraged buyout of human souls and the laundering of institutional reputation through a regulatory vacuum.",
         icon: ShieldAlert,
-        color: "from-amber-600/20 to-transparent"
+        color: "from-amber-600/20 to-transparent",
+        evidenceId: "EVD-FIN-002"
     },
     {
         num: 3,
         title: "THE ISLAND ACQUISITION",
         years: "1991–1998",
-        description: "The strategic procurement of Little St. James and the establishment of a sovereign-like immunity zone.",
+        description: "Procurement of Little St. James. Reconstructing the establishment of a sovereign-like immunity zone where the silence of the gatekeeper became the most valuable currency in the world.",
         icon: Palmtree,
-        color: "from-emerald-600/20 to-transparent"
+        color: "from-emerald-600/20 to-transparent",
+        evidenceId: "EVD-ISL-003"
     },
     {
         num: 4,
         title: "THE RECRUITMENT PIPELINE",
         years: "1995–2005",
-        description: "Unmasking the industrial-scale mechanics of the operation across global borders. Blueprints of the machine.",
+        description: "The industrial-scale mechanics of the operation. Mapping the global blueprints of a machine built to turn extreme wealth into absolute, functional immunity through deep intelligence connections.",
         icon: Network,
-        color: "from-purple-600/20 to-transparent"
+        color: "from-purple-600/20 to-transparent",
+        evidenceId: "EVD-PIPE-004"
     },
     {
         num: 5,
         title: "THE NON-PROSECUTION AGREEMENT",
         years: "2006–2008",
-        description: "The legal apex of impunity. How the highest echelons of the justice system codified protection.",
+        description: "The legal apex of institutional capture. How internal DOJ memoranda and unredacted FBI 302s reveal the structural vulnerabilities of the justice system itself.",
         icon: Scale,
-        color: "from-red-600/20 to-transparent"
+        color: "from-red-600/20 to-transparent",
+        evidenceId: "EVD-NPA-005"
     },
     {
         num: 6,
         title: "THE DECADE OF IMPUNITY",
         years: "2009–2018",
-        description: "Operating in plain sight. The absolute, functional immunity purchased through deep intelligence connections.",
+        description: "Operating in plain sight. Analyzing the 3.5 million pages of financial ledgers that prove Epstein was not an aberration, but a predictable operational output of the system.",
         icon: EyeOff,
-        color: "from-zinc-600/20 to-transparent"
+        color: "from-zinc-600/20 to-transparent",
+        evidenceId: "EVD-IMP-006"
     },
     {
         num: 7,
         title: "THE UNRAVELING",
         years: "2018–2019",
-        description: "When the system finally failed to contain the volume of its own leaked blueprints.",
+        description: "When the system failed to contain the volume of its own blueprints. The forensics of the avalanche and the initial cracks in the architecture of control.",
         icon: History,
-        color: "from-orange-600/20 to-transparent"
+        color: "from-orange-600/20 to-transparent",
+        evidenceId: "EVD-UNR-007"
     },
     {
         num: 8,
         title: "THE FINAL MONTH",
         years: "July 2019 – August 2019",
-        description: "The administrative erasure in a Manhattan jail cell and the forensic evidence left behind.",
+        description: "The administrative erasure in Manhattan. A forensic examination of the final month and the desperate attempt to drown the truth in sheer volume of public documents.",
         icon: Lock,
-        color: "from-red-900/40 to-transparent"
+        color: "from-red-900/40 to-transparent",
+        evidenceId: "EVD-FIN-008"
     },
     {
         num: 9,
         title: "THE INVESTIGATION",
         years: "2019–2023",
-        description: "Reconstructing the timeline. Why the architectural vulnerabilities exploited by the network remain intact.",
+        description: "Reconstructing the timeline. Why the predators remain among us and why the architectural vulnerabilities they exploited remain entirely intact today.",
         icon: Search,
-        color: "from-teal-600/20 to-transparent"
+        color: "from-teal-600/20 to-transparent",
+        evidenceId: "EVD-RES-009"
     }
 ];
+
+function EvidenceImage({ chapter }: { chapter: typeof CHAPTERS[0] }) {
+    if (chapter.image) {
+        return (
+            <Image
+                src={chapter.image}
+                alt={chapter.title}
+                fill
+                className="object-cover opacity-20 filter grayscale contrast-125"
+            />
+        );
+    }
+
+    // High-end Forensic Fallback
+    return (
+        <div className="absolute inset-0 flex items-center justify-center bg-zinc-950 p-12 overflow-hidden">
+            {/* Procedural Grid Background */}
+            <div className="absolute inset-0 opacity-10"
+                style={{ backgroundImage: 'linear-gradient(#444 1px, transparent 1px), linear-gradient(90deg, #444 1px, transparent 1px)', backgroundSize: '20px 20px' }} />
+
+            <div className="relative z-10 w-full h-full border border-zinc-800 flex flex-col items-center justify-center space-y-4 opacity-40">
+                <chapter.icon size={48} className="text-zinc-700" />
+                <div className="text-center">
+                    <div className="text-[10px] font-mono font-bold text-zinc-600 uppercase tracking-[0.3em] mb-1">
+                        Ref: {chapter.evidenceId}
+                    </div>
+                    <div className="h-4 w-32 bg-zinc-900 mx-auto" />
+                </div>
+
+                {/* REDACTED Text Simulation */}
+                <div className="absolute bottom-8 left-8 right-8 space-y-1">
+                    <div className="h-1 w-full bg-zinc-900" />
+                    <div className="h-1 w-[80%] bg-zinc-900" />
+                    <div className="h-1 w-[90%] bg-zinc-900" />
+                </div>
+            </div>
+
+            {/* Distressed Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-80" />
+        </div>
+    );
+}
 
 export default function TSASPageClient() {
     const [selectedChapter, setSelectedChapter] = useState<number | null>(null);
@@ -223,19 +274,14 @@ export default function TSASPageClient() {
                                 </div>
 
                                 <AnimatePresence>
-                                    {selectedChapter === chapter.num && chapter.image && (
+                                    {selectedChapter === chapter.num && (
                                         <motion.div
                                             initial={{ opacity: 0, x: 20 }}
                                             animate={{ opacity: 1, x: 0 }}
                                             exit={{ opacity: 0, x: 20 }}
                                             className="absolute inset-0 z-0"
                                         >
-                                            <Image
-                                                src={chapter.image}
-                                                alt={chapter.title}
-                                                fill
-                                                className="object-cover opacity-20 filter grayscale contrast-125"
-                                            />
+                                            <EvidenceImage chapter={chapter} />
                                         </motion.div>
                                     )}
                                 </AnimatePresence>
