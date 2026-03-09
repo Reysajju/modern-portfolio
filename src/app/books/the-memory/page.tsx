@@ -6,11 +6,11 @@ export const metadata = {
     title: "The Memory by Sajjad Rasool — Spiral Arms Book 2",
     description: "What if the only way to save humanity was to surrender your individual soul? The transcendent second installment of the Spiral Arms.",
     keywords: ["The Memory", "Sajjad Rasool", "Spiral Arms", "science fiction", "digital consciousness", "post-human", "philosophical sci-fi"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/the-memory" },
+    alternates: { canonical: "https://sajjadrasool.com/books/the-memory" },
     openGraph: {
         title: "The Memory by Sajjad Rasool — Spiral Arms Book 2",
         description: "What if the only way to save humanity was to surrender your individual soul?",
-        url: "https://sajjad.escritura.site/books/the-memory",
+        url: "https://sajjadrasool.com/books/the-memory",
         type: "book" as const,
         images: [{ url: "/books/the-memory.jpg", width: 600, height: 900, alt: "The Memory Book Cover" }],
     },

@@ -6,11 +6,11 @@ export const metadata = {
     title: "His Last Day by Sajjad Rasool",
     description: "A deeply moving biographical account of a man's final day on earth — exploring duty, memory, and what it means to say goodbye.",
     keywords: ["His Last Day", "Sajjad Rasool", "biography", "memoir", "farewell", "life reflection", "Pashtun culture", "family duty"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/his-last-day" },
+    alternates: { canonical: "https://sajjadrasool.com/books/his-last-day" },
     openGraph: {
         title: "His Last Day by Sajjad Rasool",
         description: "A deeply moving biographical account of a man's final day on earth — exploring duty, memory, and what it means to say goodbye.",
-        url: "https://sajjad.escritura.site/books/his-last-day",
+        url: "https://sajjadrasool.com/books/his-last-day",
         type: "book" as const,
         images: [{ url: "/books/his-last-day.jpg", width: 600, height: 900, alt: "His Last Day Book Cover" }],
     },

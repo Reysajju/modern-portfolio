@@ -6,11 +6,11 @@ export const metadata = {
     title: "The Gardeners of Aethelgard by Sajjad Rasool",
     description: "They didn't come to conquer. They came to cultivate. And humanity was never asked to consent.",
     keywords: ["Gardeners of Aethelgard", "Sajjad Rasool", "bio sci-fi", "alien invasion", "forced evolution", "Synthesis Arc", "biological thriller"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/the-gardeners-of-aethelgard" },
+    alternates: { canonical: "https://sajjadrasool.com/books/the-gardeners-of-aethelgard" },
     openGraph: {
         title: "The Gardeners of Aethelgard by Sajjad Rasool",
         description: "They didn't come to conquer. They came to cultivate. And humanity was never asked to consent.",
-        url: "https://sajjad.escritura.site/books/the-gardeners-of-aethelgard",
+        url: "https://sajjadrasool.com/books/the-gardeners-of-aethelgard",
         type: "book" as const,
         images: [{ url: "/books/the-gardeners-of-aethelgard.jpg", width: 600, height: 900, alt: "The Gardeners of Aethelgard Book Cover" }],
     },

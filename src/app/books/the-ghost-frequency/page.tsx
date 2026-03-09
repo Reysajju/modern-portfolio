@@ -6,11 +6,11 @@ export const metadata = {
     title: "The Ghost Frequency by Sajjad Rasool — The Final Firmware Book 2",
     description: "The Isos came to prune. They found a seed that refuses to die. A sentient data signal rewrites biological code.",
     keywords: ["The Ghost Frequency", "Sajjad Rasool", "Final Firmware", "biological sci-fi", "alien invasion", "sentient signal", "space thriller"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/the-ghost-frequency" },
+    alternates: { canonical: "https://sajjadrasool.com/books/the-ghost-frequency" },
     openGraph: {
         title: "The Ghost Frequency by Sajjad Rasool — The Final Firmware Book 2",
         description: "The Isos came to prune. They found a seed that refuses to die.",
-        url: "https://sajjad.escritura.site/books/the-ghost-frequency",
+        url: "https://sajjadrasool.com/books/the-ghost-frequency",
         type: "book" as const,
         images: [{ url: "/books/the-ghost-frequency.jpg", width: 600, height: 900, alt: "The Ghost Frequency Book Cover" }],
     },

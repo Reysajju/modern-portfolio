@@ -6,11 +6,11 @@ export const metadata = {
     title: "Yellow Room Number Three by Sajjad Rasool",
     description: "A chilling blend of Gothic Horror and Psychological Suspense — the walls remember what the doctors made them forget.",
     keywords: ["Yellow Room Number Three", "Sajjad Rasool", "gothic horror", "psychological suspense", "sanatorium", "dark fiction", "feminist horror"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/yellow-room-number-three" },
+    alternates: { canonical: "https://sajjadrasool.com/books/yellow-room-number-three" },
     openGraph: {
         title: "Yellow Room Number Three by Sajjad Rasool",
         description: "A chilling blend of Gothic Horror and Psychological Suspense — the walls remember what the doctors made them forget.",
-        url: "https://sajjad.escritura.site/books/yellow-room-number-three",
+        url: "https://sajjadrasool.com/books/yellow-room-number-three",
         type: "book" as const,
         images: [{ url: "/books/yellow-room-number-three.jpg", width: 600, height: 900, alt: "Yellow Room Number Three Book Cover" }],
     },

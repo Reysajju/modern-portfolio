@@ -6,11 +6,11 @@ export const metadata = {
     title: "The Shell by Sajjad Rasool — Spiral Arms Book 1",
     description: "The planet isn't dead. It's holding its breath. A claustrophobic, high-stakes science fiction thriller.",
     keywords: ["The Shell", "Sajjad Rasool", "Spiral Arms", "science fiction", "space opera", "sentient planet", "hard sci-fi", "The Expanse"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/the-shell" },
+    alternates: { canonical: "https://sajjadrasool.com/books/the-shell" },
     openGraph: {
         title: "The Shell by Sajjad Rasool — Spiral Arms Book 1",
         description: "The planet isn't dead. It's holding its breath. A claustrophobic, high-stakes science fiction thriller.",
-        url: "https://sajjad.escritura.site/books/the-shell",
+        url: "https://sajjadrasool.com/books/the-shell",
         type: "book" as const,
         images: [{ url: "/books/the-shell.jpg", width: 600, height: 900, alt: "The Shell Book Cover" }],
     },

@@ -20,14 +20,14 @@ const inter = Inter({
 // SEO METADATA - Sajjad Rasool Branding
 // ==========================================
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sajjad.escritura.site"),
+  metadataBase: new URL("https://sajjadrasool.com"),
 
   // Basic SEO
   title: {
-    default: "Muhammad Sajjad Rasool | Independent Author & Business Consultant",
+    default: "Muhammad Sajjad Rasool | Author & Business Consultant",
     template: "%s | Muhammad Sajjad Rasool"
   },
-  description: "Muhammad Sajjad Rasool - Independent Author of 26+ books spanning science fiction, horror, thriller & non-fiction. Freelance Business Development Manager helping tech CEOs drive growth.",
+  description: "Independent Author & Business Development Manager helping tech CEOs drive growth and forge strategic B2B partnerships.",
   keywords: [
     "Sajjad Rasool",
     "Muhammad Sajjad Rasool",
@@ -42,13 +42,13 @@ export const metadata: Metadata = {
     "B2B Relationships",
     "Book Author Pakistan"
   ],
-  authors: [{ name: "Muhammad Sajjad Rasool", url: "https://sajjad.escritura.site" }],
+  authors: [{ name: "Muhammad Sajjad Rasool", url: "https://sajjadrasool.com" }],
   creator: "Muhammad Sajjad Rasool",
   publisher: "Sajjad Rasool",
 
   // URL & Canonical
   alternates: {
-    canonical: "https://sajjad.escritura.site",
+    canonical: "https://sajjadrasool.com",
   },
 
   // Robots
@@ -71,10 +71,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://sajjad.escritura.site",
+    url: "https://sajjadrasool.com",
     siteName: "Sajjad Rasool Portfolio",
-    title: "Muhammad Sajjad Rasool | Independent Author & Business Consultant",
-    description: "Independent Author of 26+ books spanning sci-fi, horror, thriller & non-fiction. Also a Business Development Manager driving growth through strategic partnerships.",
+    title: "Muhammad Sajjad Rasool | Author & Business Consultant",
+    description: "Independent Author & Business Development Manager helping tech CEOs drive growth and forge strategic B2B partnerships.",
     images: [
       {
         url: "/og-image.png",
@@ -89,8 +89,8 @@ export const metadata: Metadata = {
   // Twitter
   twitter: {
     card: "summary_large_image",
-    title: "Muhammad Sajjad Rasool | Independent Author",
-    description: "Independent Author of 26+ books. Science fiction, horror, thriller & political non-fiction. Business Development Manager.",
+    title: "Muhammad Sajjad Rasool | Author & Business Consultant",
+    description: "Independent Author & Business Development Manager helping tech CEOs drive growth and forge strategic B2B partnerships.",
     images: ["/og-image.png"],
     creator: "@sajjadr742",
   },
@@ -123,12 +123,15 @@ export const metadata: Metadata = {
     title: "Sajjad Rasool",
     statusBarStyle: "black-translucent",
   },
+  icons: {
+    apple: "/logo.svg",
+  },
 
   // Bookmarks
   bookmarks: [
-    "https://sajjad.escritura.site/archive",
-    "https://sajjad.escritura.site/library",
-    "https://sajjad.escritura.site/contact",
+    "https://sajjadrasool.com/archive",
+    "https://sajjadrasool.com/library",
+    "https://sajjadrasool.com/contact",
   ],
 };
 
@@ -208,7 +211,7 @@ export default function RootLayout({
                 "addressLocality": "Global",
                 "addressCountry": "Remote"
               },
-              "url": "https://sajjad.escritura.site",
+              "url": "https://sajjadrasool.com",
               "sameAs": [
                 "https://www.linkedin.com/in/sajjadr742",
                 "https://twitter.com/sajjadr742"
@@ -243,7 +246,7 @@ export default function RootLayout({
               "@type": "WebSite",
               "name": "Sajjad Rasool Portfolio",
               "alternateName": "Muhammad Sajjad Rasool Portfolio",
-              "url": "https://sajjad.escritura.site",
+              "url": "https://sajjadrasool.com",
               "description": "Professional portfolio of Muhammad Sajjad Rasool - Business & Tech Consultant for Tech CEOs",
               "publisher": {
                 "@type": "Person",
@@ -251,7 +254,7 @@ export default function RootLayout({
               },
               "potentialAction": {
                 "@type": "SearchAction",
-                "target": "https://sajjad.escritura.site/search?q={search_term_string}",
+                "target": "https://sajjadrasool.com/search?q={search_term_string}",
                 "query-input": "required name=search_term_string"
               }
             })

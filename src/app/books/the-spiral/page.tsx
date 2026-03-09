@@ -6,11 +6,11 @@ export const metadata = {
     title: "The Spiral by Sajjad Rasool — Spiral Arms Book 6",
     description: "The war for the galaxy was never fought in the void. It was fought in the mind. The epic six-book saga's cataclysmic conclusion.",
     keywords: ["The Spiral", "Sajjad Rasool", "Spiral Arms", "science fiction", "space opera", "galactic war", "epic finale", "first contact"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/the-spiral" },
+    alternates: { canonical: "https://sajjadrasool.com/books/the-spiral" },
     openGraph: {
         title: "The Spiral by Sajjad Rasool — Spiral Arms Book 6 (Finale)",
         description: "The war for the galaxy was never fought in the void. It was fought in the mind.",
-        url: "https://sajjad.escritura.site/books/the-spiral",
+        url: "https://sajjadrasool.com/books/the-spiral",
         type: "book" as const,
         images: [{ url: "/books/the-spiral.jpg", width: 600, height: 900, alt: "The Spiral Book Cover" }],
     },

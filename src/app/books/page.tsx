@@ -6,11 +6,11 @@ export const metadata = {
     title: "Books by Sajjad Rasool — Complete Library",
     description: "Browse all 26 books by Sajjad Rasool. Free ebooks spanning science fiction, horror, thriller, and more. Available on Lulu.",
     keywords: ["Sajjad Rasool", "books", "ebooks", "science fiction", "horror", "thriller", "Spiral Arms", "Children of the Olive", "Lulu"],
-    alternates: { canonical: "https://sajjad.escritura.site/books" },
+    alternates: { canonical: "https://sajjadrasool.com/books" },
     openGraph: {
         title: "Books by Sajjad Rasool — Complete Library",
         description: "Browse all 26 books by Sajjad Rasool. Free ebooks spanning science fiction, horror, thriller, and more.",
-        url: "https://sajjad.escritura.site/books",
+        url: "https://sajjadrasool.com/books",
         type: "website" as const,
     },
 };

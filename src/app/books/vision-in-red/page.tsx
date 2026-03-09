@@ -6,11 +6,11 @@ export const metadata = {
     title: "Vision in Red by Sajjad Rasool — Children of the Olive Book 1",
     description: "The children of Falestinam draw the world as they see it. Now, they are all drawing the same terrifying thing.",
     keywords: ["Vision in Red", "Sajjad Rasool", "Children of the Olive", "supernatural horror", "Palestine", "occupation", "dark fiction", "political horror"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/vision-in-red" },
+    alternates: { canonical: "https://sajjadrasool.com/books/vision-in-red" },
     openGraph: {
         title: "Vision in Red by Sajjad Rasool — Children of the Olive Book 1",
         description: "The children draw the world as they see it. Now, they are all drawing the same terrifying thing.",
-        url: "https://sajjad.escritura.site/books/vision-in-red",
+        url: "https://sajjadrasool.com/books/vision-in-red",
         type: "book" as const,
         images: [{ url: "/books/vision-in-red.jpg", width: 600, height: 900, alt: "Vision in Red Book Cover" }],
     },

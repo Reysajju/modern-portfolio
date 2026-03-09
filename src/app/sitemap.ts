@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://sajjad.escritura.site'
+  const baseUrl = 'https://sajjadrasool.com'
 
   const bookSlugs = [
     'china-ate-red-apple',

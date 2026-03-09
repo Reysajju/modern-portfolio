@@ -6,11 +6,11 @@ export const metadata = {
     title: "Carmilla's Orchard by Sajjad Rasool",
     description: "A lush, visceral Erotic Gothic Novel that subverts traditional vampire horror with botanical body horror and dark romance.",
     keywords: ["Carmilla's Orchard", "Sajjad Rasool", "gothic romance", "erotic horror", "vampire fiction", "botanical horror", "dark romance", "body horror"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/carmillas-orchard" },
+    alternates: { canonical: "https://sajjadrasool.com/books/carmillas-orchard" },
     openGraph: {
         title: "Carmilla's Orchard by Sajjad Rasool",
         description: "A lush, visceral Erotic Gothic Novel that subverts traditional vampire horror with botanical body horror and dark romance.",
-        url: "https://sajjad.escritura.site/books/carmillas-orchard",
+        url: "https://sajjadrasool.com/books/carmillas-orchard",
         type: "book" as const,
         images: [{ url: "/books/carmillas-orchard.jpg", width: 600, height: 900, alt: "Carmilla's Orchard Book Cover" }],
     },

@@ -6,11 +6,11 @@ export const metadata = {
     title: "The Whispering Ledger by Sajjad Rasool",
     description: "A haunting cosmic horror novella — The books in Lenore's library don't just contain stories. They contain souls.",
     keywords: ["The Whispering Ledger", "Sajjad Rasool", "cosmic horror", "dark fiction", "Lovecraftian", "library horror", "supernatural"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/the-whispering-ledger" },
+    alternates: { canonical: "https://sajjadrasool.com/books/the-whispering-ledger" },
     openGraph: {
         title: "The Whispering Ledger by Sajjad Rasool",
         description: "A haunting cosmic horror novella — The books in Lenore's library don't just contain stories. They contain souls.",
-        url: "https://sajjad.escritura.site/books/the-whispering-ledger",
+        url: "https://sajjadrasool.com/books/the-whispering-ledger",
         type: "book" as const,
         images: [{ url: "/books/the-whispering-ledger.jpg", width: 600, height: 900, alt: "The Whispering Ledger Book Cover" }],
     },

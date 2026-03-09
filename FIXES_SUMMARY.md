@@ -2,7 +2,7 @@
 
 ## Problem
 Users were seeing a client-side error when trying to access the books/library section:
-"Application error: a client-side exception has occurred while loading www.sajjadrasool.com"
+"Application error: a client-side exception has occurred while loading sajjadrasool.com"
 
 ## Root Cause
 The application was trying to use Supabase authentication without proper error handling for missing or invalid configuration. When environment variables were not set or were invalid, the code would crash instead of gracefully handling the situation.

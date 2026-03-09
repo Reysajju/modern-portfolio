@@ -6,11 +6,11 @@ export const metadata = {
     title: "The Bitter Well by Sajjad Rasool — Children of the Olive Book 3",
     description: "A weaponized drought. An unblinking enemy. A mother's defiance is the only record left.",
     keywords: ["The Bitter Well", "Sajjad Rasool", "Children of the Olive", "dystopian thriller", "resistance fiction", "water crisis", "political horror"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/the-bitter-well" },
+    alternates: { canonical: "https://sajjadrasool.com/books/the-bitter-well" },
     openGraph: {
         title: "The Bitter Well by Sajjad Rasool — Children of the Olive Book 3",
         description: "A weaponized drought. An unblinking enemy. A mother's defiance is the only record left.",
-        url: "https://sajjad.escritura.site/books/the-bitter-well",
+        url: "https://sajjadrasool.com/books/the-bitter-well",
         type: "book" as const,
         images: [{ url: "/books/the-bitter-well.jpg", width: 600, height: 900, alt: "The Bitter Well Book Cover" }],
     },

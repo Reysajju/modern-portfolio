@@ -6,11 +6,11 @@ export const metadata = {
     title: "The Bridge by Sajjad Rasool — Spiral Arms Book 4",
     description: "The golden web was a gift. It has become a cage. Book Four of the epic Spiral Arms Series.",
     keywords: ["The Bridge", "Sajjad Rasool", "Spiral Arms", "science fiction", "space opera", "quantum entanglement", "alien consciousness"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/the-bridge" },
+    alternates: { canonical: "https://sajjadrasool.com/books/the-bridge" },
     openGraph: {
         title: "The Bridge by Sajjad Rasool — Spiral Arms Book 4",
         description: "The golden web was a gift. It has become a cage. Book Four of the epic Spiral Arms Series.",
-        url: "https://sajjad.escritura.site/books/the-bridge",
+        url: "https://sajjadrasool.com/books/the-bridge",
         type: "book" as const,
         images: [{ url: "/books/the-bridge.jpg", width: 600, height: 900, alt: "The Bridge Book Cover" }],
     },

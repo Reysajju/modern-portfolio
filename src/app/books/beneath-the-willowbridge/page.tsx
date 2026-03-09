@@ -6,11 +6,11 @@ export const metadata = {
     title: "Beneath The Willowbridge by Sajjad Rasool",
     description: "A gripping supernatural horror — the roots of the old tree are not searching for water. They are searching for names.",
     keywords: ["Beneath The Willowbridge", "Sajjad Rasool", "supernatural horror", "folk horror", "gothic fiction", "dark fantasy"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/beneath-the-willowbridge" },
+    alternates: { canonical: "https://sajjadrasool.com/books/beneath-the-willowbridge" },
     openGraph: {
         title: "Beneath The Willowbridge by Sajjad Rasool",
         description: "A gripping supernatural horror — the roots of the old tree are not searching for water. They are searching for names.",
-        url: "https://sajjad.escritura.site/books/beneath-the-willowbridge",
+        url: "https://sajjadrasool.com/books/beneath-the-willowbridge",
         type: "book" as const,
         images: [{ url: "/books/beneath-the-willowbridge.jpg", width: 600, height: 900, alt: "Beneath The Willowbridge Book Cover" }],
     },

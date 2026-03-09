@@ -6,11 +6,11 @@ export const metadata = {
     title: "The Disconnect by Sajjad Rasool",
     description: "A forensic investigation into the machinery that has hijacked American democracy — exposing the architecture of modern betrayal.",
     keywords: ["The Disconnect", "Sajjad Rasool", "political non-fiction", "American democracy", "lobbying", "healthcare", "military spending", "corruption"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/the-disconnect" },
+    alternates: { canonical: "https://sajjadrasool.com/books/the-disconnect" },
     openGraph: {
         title: "The Disconnect by Sajjad Rasool",
         description: "A forensic investigation into the machinery that has hijacked American democracy.",
-        url: "https://sajjad.escritura.site/books/the-disconnect",
+        url: "https://sajjadrasool.com/books/the-disconnect",
         type: "book" as const,
         images: [{ url: "/books/the-disconnect.jpg", width: 600, height: 900, alt: "The Disconnect Book Cover" }],
     },

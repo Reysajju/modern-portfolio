@@ -466,7 +466,7 @@ const Contact = () => {
             <div>
               <span className="text-[#C5A059] text-xs uppercase tracking-widest mb-4 block">Digital Presence</span>
               <div className="flex gap-6">
-                <a href="https://sajjad.escritura.site/" target="_blank" rel="noreferrer" className="p-3 border border-[#F5F2ED]/20 rounded-full hover:bg-[#C5A059] hover:border-[#C5A059] hover:text-[#1B3022] transition-all">
+                <a href="https://sajjadrasool.com/" target="_blank" rel="noreferrer" className="p-3 border border-[#F5F2ED]/20 rounded-full hover:bg-[#C5A059] hover:border-[#C5A059] hover:text-[#1B3022] transition-all">
                   <Globe size={20} />
                 </a>
                 <a href="#" className="p-3 border border-[#F5F2ED]/20 rounded-full hover:bg-[#C5A059] hover:border-[#C5A059] hover:text-[#1B3022] transition-all">

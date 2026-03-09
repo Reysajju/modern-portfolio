@@ -6,11 +6,11 @@ export const metadata = {
     title: "China Ate Red Apple by Sajjad Rasool",
     description: "The True Cost of the iPhone and How a Capitalist Titan Became an Unwitting Architect of Its Rival’s Rise.",
     keywords: ["China Ate Red Apple", "Sajjad Rasool", "Apple iPhone", "business book", "economics", "technology", "capitalism", "Tim Cook", "supply chain"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/china-ate-red-apple" },
+    alternates: { canonical: "https://sajjadrasool.com/books/china-ate-red-apple" },
     openGraph: {
         title: "China Ate Red Apple by Sajjad Rasool",
         description: "The True Cost of the iPhone and How a Capitalist Titan Became an Unwitting Architect of Its Rival's Rise.",
-        url: "https://sajjad.escritura.site/books/china-ate-red-apple",
+        url: "https://sajjadrasool.com/books/china-ate-red-apple",
         type: "book" as const,
         images: [{ url: "/books/china-ate-red-apple.jpg", width: 600, height: 900, alt: "China Ate Red Apple Book Cover" }],
     },

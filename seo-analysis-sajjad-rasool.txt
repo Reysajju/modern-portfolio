@@ -1,0 +1,1295 @@
+Check page
+You have 2of 3 checks left today
+
+Page URL
+https://sajjadrasool.com/
+Crawl mode
+HTTP authentication: Username
+Username
+HTTP authentication: Password
+Password
+
+Checks
+
+Elements
+
+Miscellaneous
+On-page score
+Issues:
+4
+Critical
+64%
+On-page score
+Meta data
+54 %
+Page quality
+79 %
+Page structure
+74 %
+Links
+75 %
+Server
+100 %
+External factors
+0 %
+HTML page
+Himmelimherzen
+Meta title
+Muhammad Sajjad Rasool | Independent Author & Business Consultant
+
+Meta description
+Muhammad Sajjad Rasool - Independent Author of 26+ books spanning science fiction, horror, thriller & non-fiction. Freelance Business Development Manager helping tech CEOs drive growth.
+
+URL
+https://sajjadrasool.com/
+Status code
+200
+Page status
+Follow
+Index
+Language
+EN
+Response time
+0.10 sec
+File size
+79.50 kB
+Word count
+600
+To-Do List
+Tasks sorted by priority
+
+To-Do
+
+Importance
+
+Action
+Review and improve the page title.
+Warning
+
+More details
+Improve the text of the meta description.
+Warning
+
+More details
+Try to make the page title match the content more closely.
+Warning
+
+More details
+Review and improve the H1 heading.
+Warning
+
+More details
+Checks
+Meta data
+54%
+Title
+
+Learn more
+Warning
+2/3
+Very important
+Muhammad Sajjad Rasool | Independent Author & Business Consultant
+The page title should be shorter than 580 pixels. It is 636 pixels long. Optimize title
+There are no duplicate words in the title.
+Meta description
+
+Learn more
+Warning
+1/2
+Very important
+Muhammad Sajjad Rasool - Independent Author of 26+ books spanning science fiction, horror, thriller & non-fiction. Freelance Business Development Manager helping tech CEOs drive growth.
+The meta description is too long: 1181 pixels from max. 1000 pixels.
+Crawlability
+
+Learn more
+1/1
+Very important
+There are no problems in accessing the page.
+Canonical link
+
+Learn more
+Errors
+1/2
+Important
+https://sajjadrasool.com/
+The canonical link points to a different domain.
+Language
+
+Learn more
+4/4
+Low importance
+Language detected in text: en
+Language defined in HTML: en
+Server location: Germany
+The following language is defined in the HTML code: en
+Alternate/hreflang links
+
+Learn more
+1/1
+Low importance
+There are no alternate links specified on this page.
+Other meta tags
+
+Learn more
+2/2
+Low importance
+There is no rel=next meta tag on this page.
+There is no rel=prev meta tag on this page.
+Domain
+
+Learn more
+3/3
+Low importance
+The domain is not a subdomain.
+The domain length works well.
+The domain name does not contain any non-Latin characters.
+Page URL
+
+Learn more
+3/3
+Low importance
+No parameters were found in the URL.
+No session ID was found in the URL.
+The URL does not have too many subdirectories.
+Charset encoding
+
+Learn more
+1/1
+Low importance
+The charset encoding (UTF-8) is set correctly.
+Doctype
+
+Learn more
+2/2
+Nice to have
+The doctype HTML 5 is set correctly.
+The doctype is placed first in the HTML code.
+Favicon
+
+Learn more
+1/1
+Nice to have
+The favicon is linked correctly.
+Page quality
+79%
+Content
+
+Learn more
+Warning
+7/8
+Very important
+Some words from the page title are not used within the pages content
+The word count of 600 words is fine.
+22.5% of the text are stop words.
+The page contains a list, which indicates a good text structure.
+13 paragraphs (text blocks) were found on this page.
+No placeholder texts or images were found.
+There are no duplicates on the site
+The average sentence length of 15.25 words is good.
+Frames
+
+Learn more
+1/1
+Very important
+This page does not use a frameset.
+Mobile optimization
+
+Learn more
+Warning
+1/2
+Low importance
+No Apple touch icon is specified
+A viewport (width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes) is provided.
+Strong and bold tags
+
+Learn more
+1/1
+Low importance
+The usage of strong and bold tags is perfect. We recommend the use of up to 12 tags for this page.
+Image SEO
+
+Learn more
+1/1
+Low importance
+ALT text (alternative text) is correctly used on all found images.
+Social media
+
+Learn more
+Warning
+0/1
+Nice to have
+There are few social sharing options on the page. Sharing plugins can increase the page's reach on social media.
+Additional markup
+
+Learn more
+1/1
+Nice to have
+This page uses Google authorship information without an image.
+HTTPS
+
+Learn more
+2/2
+Low importance
+This page uses HTTPS to protect the privacy and integrity of information exchanged.
+All included files are also transferred via HTTPS.
+Others
+74%
+H1 heading
+
+Learn more
+Warning
+1/2
+Very important
+MuhammadSajjadRasool
+The H1 heading consists of only one word. There should be more information given.
+Headings
+
+Learn more
+Warning
+0/1
+Important
+There are 29 headings on the page. The number of headings should be more in proportion to the amount of text.
+Link structure
+75%
+Internal links
+
+Learn more
+4/4
+Important
+The number of internal links is ok.
+Every link text is unique.
+None of the link texts are too long.
+There are no dynamic parameters used in internal links.
+External links
+
+Learn more
+Warning
+0/1
+Nice to have
+There are no external links on this page.
+Server configuration
+100%
+HTTP redirects
+
+Learn more
+2/2
+Very important
+The checked page does not redirect to another URL.
+The redirect of URLs with www and non-www subdomain is configured correctly.
+HTTP header
+
+Learn more
+2/2
+Important
+No X-Powered HTTP header is sent.
+This page uses compression for data transfer.
+Performance
+
+Learn more
+2/2
+Low importance
+The HTML page response time of 0,10 seconds is below the target of 0.40 seconds.
+The file size of the HTML document is fine. (80 kB)
+External factors
+0%
+Backlinks
+
+Learn more
+Errors
+0/1
+Very important
+We didn't find any backlinks to this page.
+
+
+logo
+favicon
+copywritely.com
+Demo
+Back to Extra Tools
+On-Page SEO Checker
+Limits:
+1/5 checks
+Get quick on-page SEO analysis for any URL
+Enter your URL to check web page's health
+73
+of 100
+Page score for
+https://sajjadrasool.com
+3
+Criticals
+1
+Warnings
+Status code
+200 OK
+Indexation
+Indexable
+Page size
+439.80 KB
+Issues overview
+Criticals
+Status code
+Canonical status code
+Canonical tag contains a link with 0 status code (Recommended: 200 status code)
+Accessible index page
+Redirect from index pages (.html and .php) configured incorrectly
+Warnings
+Text to code ratio
+6% (Recommended: more than 10%)
+Content optimization
+General
+Status code
+200 OK
+HTML size
+439.80 KB
+Title check
+Muhammad Sajjad Rasool | Independent Author & Business Consultant
+Title length
+65 characters (Recommended: 35-65 characters)
+Description check
+Muhammad Sajjad Rasool - Independent Author of 26+ books spanning science fiction, horror, thriller & non-fiction. Freelance Business Development Manager helping tech CEOs drive growth.
+Description length
+185 characters (Recommended: 70-320 characters)
+Google preview
+sajjadrasool.com
+Muhammad Sajjad Rasool | Independent Author & Business Consultant
+Muhammad Sajjad Rasool - Independent Author of 26+ books spanning science fiction, horror, thriller & non-fiction. Freelance Business Development Manager helping tech CEOs drive growth.
+H1 check
+MuhammadSajjadRasool
+H1 count
+1 tags (Recommended: 1 h1 tag)
+H1 length
+20 characters (Recommended: 5-70 characters)
+H1 = Title
+H1 does not match Title
+H1-H6 structure
+<H1>
+<H2>
+<H3>
+<H4>
+<H5>
+<H6>
+1
+5
+18
+3
+2
+0
+<H1>
+MuhammadSajjadRasool
+<H3>
+Strategic Growth
+<H3>
+Author & Storyteller
+<H3>
+Tech Execution
+<H3>
+Tech Innovators Hub
+Show all
+Content check
+Text length
+4835 characters (Recommended: more than 500 characters)
+Text to code ratio
+6% (Recommended: more than 10%)
+Relevance
+Word
+Count
+Percent
+business
+19
+2.96
+developer
+13
+2.03
+b2b
+11
+1.72
+growth
+9
+1.40
+author's
+9
+1.40
+Show all
+Structured data
+Open Graph
+Open Graph
+OpenGraph markup is not found
+Images
+Favicon
+Favicon
+set
+Images(found 8)
+Preview
+Alt attribute
+Title attribute
+Size
+
+Muhammad Sajjad Rasool — Freelance Business Development Manager and Author based in Karachi, Pakistan
+[Missed]
+68 KB
+
+From Chemistry Labs to Boardrooms
+[Missed]
+57 KB
+
+Drafting The Journey
+[Missed]
+53 KB
+
+Freelance Business Development Manager & Author
+[Missed]
+42 KB
+
+The Art of B2B Connections
+[Missed]
+41 KB
+Show all
+Search optimization
+Canonical link check
+https://sajjadrasool.com/
+Status code
+Domain
+Canonical link point on page with another domain
+Canonical status code
+Canonical tag contains a link with 0 status code (Recommended: 200 status code)
+Alternate link check
+Hreflang tags
+Hreflang tags not found
+Indexation
+Robots meta tag
+Page is open for indexing in robots meta tag
+X-Robots-Tag
+Page is open for indexing in X-Robots-Tag
+Robots.txt file
+Page crawling is allowed in robots.txt file
+Noindex tag
+There is no content in noindex tags
+URL vulnerability
+Case sensitive
+Page URL is case sensitive
+Trailing slash
+Ending slash redirects configurated correctly
+Injecting parameters
+Processing of injecting parameters in URL configured correctly
+Duplicate slashes
+Processing of duplicate slashes in URL configured correctly
+HTTP and HTTPS
+Working protocol redirect: HTTP to HTTPS
+Hidden links
+Hidden links not found
+WWW and non-WWW
+URLs redirect to preferred version of domain name
+404 page
+Error page responded 404 status code
+Accessible index page
+Redirect from index pages (.html and .php) configured incorrectly
+Links
+External links(not found)
+Internal links(found 11)
+#
+Link
+Anchor
+Code
+1
+https://sajjadrasool.com#
+Discover more
+200 OK
+2
+https://sajjadrasool.com/books
+Browse All 26 Books Free ebooks and paperbacks — science fiction, horror, thrillers, and more
+200 OK
+3
+https://sajjadrasool.com/login
+Sign In
+200 OK
+4
+https://sajjadrasool.com#archive
+Experience
+200 OK
+5
+https://sajjadrasool.com#library
+Books & Projects
+200 OK
+Show all
+Subdomain links(not found)
+Google PageSpeed Insights
+Mobile
+Desktop
+91
+of 100
+Mobile PageSpeed Insights
+0-49
+50-89
+90-100
+Web Hosting significantly impacts the page load speed. Look through the Best hosting providers and choose the one with the highest level of performance guarantees!
+Field data
+The Chrome User Experience Report does not have sufficient real-world speed data for this page.
+Lab data
+First Contentful Paint
+1.20 s
+Largest Contentful Paint
+3.30 s
+Total Blocking Time
+0.01 s
+Cumulative Layout Shift
+Speed Index
+1.66 s
+Values are estimated and may vary. The performance score is calculated directly from these metrics.
+screenshot
+screenshot
+screenshot
+screenshot
+screenshot
+screenshot
+screenshot
+screenshot
+Opportunities
+These suggestions can help your page load faster. They don't directly affect the Performance score.
+Diagnostics
+These suggestions can help your page load faster. They don't directly affect the Performance score.
+Passed audits(found 0)
+The amount of successfully passed audits.
+Page navigation
+Issues overview
+Content optimization
+1
+Structured data
+Images
+Search optimization
+3
+Links
+PageSpeed Insights
+Speed up on-page audit routine with Chrome extension
+Quickly gather basic SEO data like status code, links, speed, and more for any URL.
+Get unlimited checks for FREE by creating account in Sitechecker
+
+
+Skip to content
+Pricing
+Enterprise
+More
+Log In
+Sign Up
+Home
+SEO
+AI
+Traffic & Market
+Local
+Content
+Social
+Ad
+AI PR
+Reports
+App Center
+SEO
+Dashboard
+Site Performance
+Site Audit
+Position Tracking
+Competitive Analysis
+Domain Overview
+Organic Rankings
+Top Pages
+Compare Domains
+Keyword Gap
+Backlink Gap
+Keyword Research
+Keyword Overview
+Keyword Magic Tool
+Keyword Strategy Builder
+Content Ideas
+SEO Writing Assistant
+Topic Research
+SEO Content Template
+Link Building
+Backlinks
+Referring Domains
+Backlink Audit
+Extras
+Sensor
+SEOquake
+Semrush Rank
+Other
+On Page SEO Checker
+Organic Traffic Insights
+Link Building
+Log File Analyzer
+
+SEO Checker
+Analyze your website for SEO issues and opportunities, and use the SEO report to address critical problems and improve organic visibility. Powered by Semrush's Site Audit. No sign-up required.
+
+https://sajjadrasool.com
+2/3
+SEO Audit Results for sajjadrasool.com
+The SEO score for this website is 36 out of 100. We found 9 critical issues and 3 minor issues that should be addressed to improve Google rankings and AI visibility and drive more traffic to the website.
+
+Overview
+
+Issues and Recommendations
+
+On-Page SEO
+
+Keyword Rankings
+
+Top Pages
+
+Technical SEO
+
+Page Performance
+
+Competitors
+
+Off-Page SEO
+
+Top Backlinks
+
+Social Media
+
+Overview
+This section summarizes your site's overall SEO performance, providing insights from on-page, technical, off-page, site speed, and social signals, and highlights both strengths and priority issues to address.
+
+36SEO Score
+36SEO Score
+On-Page SEO
+75%
+Technical SEO
+70%
+Off-Page SEO
+0%
+Social Media
+0%
+Issues and Recommendations
+This section identifies your site’s most critical SEO issues and delivers clear recommendations to resolve them and strengthen search performance.
+
+Type
+Element
+Priority
+Problem and Recommendation
+Sortable
+Page Speed
+
+DOM Size
+
+red-flag
+Unable to retrieve DOM Size metric. The page may be inaccessible or the API is unavailable.
+
+Page Speed
+
+Interaction to Next Paint (INP)
+
+red-flag
+Clicks and taps on the page feel noticeably delayed and sluggish. Defer non-critical JavaScript, move work off the main thread, and reduce third-party script impact to improve the user experience.
+
+Page Speed
+
+Mobile Friendliness
+
+red-flag
+Your page is not mobile friendly. Mobile users may struggle with tiny text, missing responsive layouts, or hard-to-tap buttons. Implement a responsive viewport, increase font sizes, and enlarge/space tap targets.
+
+Social Media
+
+YouTube
+
+red-flag
+It looks like you may not be linking to a YouTube page. Add a working YouTube link to showcase your video content and boost visitor engagement.
+
+Social Media
+
+X
+
+red-flag
+It looks like you may not be linking to an X (Twitter) profile. Add a working X link so visitors can follow your latest updates.
+
+Social Media
+
+LinkedIn
+
+red-flag
+It looks like you may not be linking to a LinkedIn page. Add a working LinkedIn link to strengthen your professional presence and build audience trust.
+
+Social Media
+
+Instagram
+
+red-flag
+It looks like you may not be linking to an Instagram page. Add a working Instagram link to grow your visual audience and build brand trust.
+
+Social Media
+
+Facebook
+
+red-flag
+It looks like you may not be linking to a Facebook page. Add a working Facebook link to help visitors connect with you on social media.
+
+On-Page SEO
+
+Meta Description
+
+red-flag
+Your meta description is too long (185 characters). Consider shortening it to 100-130 characters.
+
+On-Page SEO
+
+Title
+
+Your title is a bit long (65 characters). Aim for 50-60 characters.
+
+Show More
+
+Go beyond basic fixes and best practices with a free Semrush account
+Identify technical SEO issues quickly
+Uncover errors impacting rankings
+Analyze competitors' site health
+Access 55+ more powerful tools
+Go beyond basic fixes and best practices with a free Semrush account
+On-Page SEO
+This section compiles the on-page SEO audit results, detailing assessments of key on-page elements, and pairs each issue with clear recommendations for improvement.
+
+Element
+Priority
+Problem and Recommendation
+Sortable
+URL
+The length of your URL is good (20 characters).
+
+sajjadrasool.com
+Title
+Your title is a bit long (65 characters). Aim for 50-60 characters.
+
+Muhammad Sajjad Rasool | Independent Author &amp; Business Consultant
+Meta Description
+red-flag
+Your meta description is too long (185 characters). Consider shortening it to 100-130 characters.
+
+Muhammad Sajjad Rasool - Independent Author of 26+ books spanning science fiction, horror, thriller &amp; non-fiction. Freelance Business Development Manager helping tech CEOs drive growth.
+H1
+You have a single H1 on the page and its a good length (20 characters).
+
+MuhammadSajjadRasool
+H2-H6 Structure
+You have a good heading structure.
+
+Heading
+Frequency
+H2
+5
+H3
+18
+H4
+3
+H5
+2
+H6
+0
+Heading
+Text
+H2
+The Archive
+
+H2
+The Library
+
+H2
+The Arsenal
+
+H2
+The Engine
+
+H2
+Get In Touch
+
+H3
+Strategic Growth
+
+H3
+Author &amp;amp; Storyteller
+
+H3
+Tech Execution
+
+H3
+Tech Innovators Hub
+
+H3
+Freelance Business Development Manager &amp;amp; Author
+
+H3
+Senior Executive — Quality Assurance &amp;amp; Landing Page Developer
+
+H3
+BS Chemistry
+
+H3
+Featured Project
+
+H3
+E-Book Library
+
+H3
+Business Development
+
+H3
+The Author&amp;#x27;s Mind
+
+H3
+Tech Executions
+
+H3
+Communication
+
+H3
+Recognition
+
+H3
+The Art of B2B Connections
+
+H3
+From Chemistry Labs to Boardrooms
+
+H3
+Drafting The Journey
+
+H3
+Let&amp;#x27;s Build Something Together
+
+H4
+The Business Development Manual
+
+H4
+Browse All 26 Books
+
+H4
+Muhammad Sajjad Rasool
+
+H5
+Quick Links
+
+H5
+Connect
+
+Image Alt
+Your images all have alt text.
+
+Content
+You have a good text-to-code ratio (26.76%)
+
+Your page has an appropriate amount of content (967 words).
+
+Keyword Density
+Analyze the keyword density report to ensure the highest density words and phrases are keywords you want to rank for.
+
+Keyword
+Instances
+Density
+business
+
+15
+2.76%
+b2b
+
+9
+1.65%
+development
+
+7
+1.29%
+growth
+
+6
+1.1%
+journey
+
+6
+1.1%
+partnerships
+
+6
+1.1%
+landing
+
+5
+0.92%
+strategic
+
+5
+0.92%
+tech
+
+5
+0.92%
+author
+
+4
+0.74%
+chemistry
+
+4
+0.74%
+pages
+
+4
+0.74%
+analytical
+
+3
+0.55%
+books
+
+3
+0.55%
+building
+
+3
+0.55%
+creative
+
+3
+0.55%
+driving
+
+3
+0.55%
+featured
+
+3
+0.55%
+insights
+
+3
+0.55%
+karachi
+
+3
+0.55%
+min
+
+3
+0.55%
+pakistan
+
+3
+0.55%
+quality
+
+3
+0.55%
+read
+
+3
+0.55%
+storytelling
+
+3
+0.55%
+systems
+
+3
+0.55%
+thinking
+
+3
+0.55%
+Keyword Rankings
+This section provides a list of the website's top SEO keywords according to the organic traffic they drive to the site.
+
+Keyword
+Rank
+Traffic %
+Volume
+KD %
+CPC (USD)
+Sortable
+
+Sorry, there are no results for this domain or website URL
+Top Pages
+This section provides a list of the website's top pages according to the organic traffic they drive to the site.
+
+URL
+Traffic %
+Keywords
+Ref Dom
+Backlinks
+Sortable
+
+Sorry, there are no results for this domain or website URL
+Technical SEO
+This section presents the results of the technical SEO audit, covering elements like crawlability, indexation, security, and structured data, along with recommendations to resolve any issues.
+
+Element
+Priority
+Problem and Recommendation
+Sortable
+Favicon
+Your favicon is valid and accessible.
+/icon.jpeg?icon.844f205f.jpeg
+Noindex
+Your page is properly configured for search engine indexing.
+Sitemap
+Your website contains a valid XML sitemap.
+https://sajjadrasool.com/sitemap.xml
+Hreflang
+No hreflang tags found. If your site has language- or region-specific versions, add hreflang tags to help search engines show the right version of the page.
+Language
+Your website language is properly declared.
+en
+Canonical
+There are issues with your canonical tag implementation. You should check to ensure it points to the correct URL.
+https://sajjadrasool.com
+Robots.txt
+Your robots.txt file is properly configured and accessible.
+https://sajjadrasool.com/robots.txt
+Structured Data
+Your page contains valid structured data.
+ContactPage
+EducationalOrganization
+ItemList
+Person
+WebSite
+WorkExperience
+Page Speed & Core Web Vitals
+This section shows your page load time, Core Web Vitals, and other speed signals that affect search results and user experience. You get a clear assessment, note any issues, and learn the exact steps to make your pages faster and strengthen overall SEO impact.
+
+All recommendations follow Google’s performance guidelines.
+
+Element
+Priority
+Problem and Recommendation
+Sortable
+Performance Score
+Your page meets Google’s performance benchmarks across speed and Core Web Vitals, so users see and interact with content quickly.
+Performance Score: 98/100
+Mobile Friendliness
+red-flag
+Your page is not mobile friendly. Mobile users may struggle with tiny text, missing responsive layouts, or hard-to-tap buttons. Implement a responsive viewport, increase font sizes, and enlarge/space tap targets.
+Mobile Friendliness score: 1/3
+Largest Contentful Paint (LCP)
+The main image or block of text on the page appears quickly, giving users confidence that the page is loading.
+LCP: 0.9s
+Interaction to Next Paint (INP)
+red-flag
+Clicks and taps on the page feel noticeably delayed and sluggish. Defer non-critical JavaScript, move work off the main thread, and reduce third-party script impact to improve the user experience.
+INP: 0.883s
+Cumulative Layout Shift (CLS)
+Page elements are visually stable while loading, so elements don’t jump around upon page load.
+CLS: 0.0
+Time to First Byte (TTFB)
+The server responds quickly, so users start receiving data almost instantly.
+TBT: 0.004s
+First Contentful Paint (FCP)
+The first text or image on the page appears almost instantly, giving users feedback that the page is loading.
+FCP: 0.6s
+Speed Index
+Visual content appears very quickly and users see your page almost instantly.
+Speed Index: 1.4s
+Total Blocking Time (TBT)
+Scripts rarely block the main thread, so interactions feel smooth and responsive.
+TBT: 0.0s
+DOM Size
+red-flag
+Unable to retrieve DOM Size metric. The page may be inaccessible or the API is unavailable.
+Identify technical issues and get fixes in plain English with a free account
+Competitors
+This section provides a list of the website's top competitors according to the percentage of keywords both sites are competing for in Google search.
+
+Competitor
+Common Keywords
+Competition Level
+Sortable
+
+Sorry, there are no results for this domain or website URL
+Off-Page SEO
+This section compiles the off-page SEO audit results, evaluating backlinks, referring domains, Authority Score, and the balance between dofollow and nofollow links, and provides focused recommendations to strengthen and diversify your link profile.
+
+Element
+Priority
+Problem and Recommendation
+Sortable
+
+Sorry, there are no results for this domain or website URL
+Top Backlinks
+This section provides a list of the website's top backlinks according to the Authority Score of the linking site.
+
+Page AS
+Source page Title and URL
+Anchor and Target URL
+Sortable
+Social Media
+This section compiles the social media audit results, confirming whether links to Facebook, YouTube, Instagram, X, and LinkedIn are present, and offers recommendations to add any missing profiles.
+
+Element
+Priority
+Problem and Recommendation
+Sortable
+Facebook
+
+red-flag
+It looks like you may not be linking to a Facebook page. Add a working Facebook link to help visitors connect with you on social media.
+
+YouTube
+
+red-flag
+It looks like you may not be linking to a YouTube page. Add a working YouTube link to showcase your video content and boost visitor engagement.
+
+Instagram
+
+red-flag
+It looks like you may not be linking to an Instagram page. Add a working Instagram link to grow your visual audience and build brand trust.
+
+X
+
+red-flag
+It looks like you may not be linking to an X (Twitter) profile. Add a working X link so visitors can follow your latest updates.
+
+LinkedIn
+
+red-flag
+It looks like you may not be linking to a LinkedIn page. Add a working LinkedIn link to strengthen your professional presence and build audience trust.
+
+Optimize your site for increased visibility across the web
+How to Use Your Site Audit Report
+1
+
+Enter a domain or website URL in the field above
+2
+
+Click "Analyze Website" to generate a free SEO report
+3
+
+Use the report to fix critical issues and improve SEO performance
+Why Check Your Website's SEO?
+What Is Semrush's SEO Checker?
+Semrush’s SEO Checker is a free SEO audit tool that scans your website and finds critical SEO issues that could limit your search performance. The SEO Checker returns an overall SEO score, a prioritized to-do list, and a detailed report that shows both the elements that passed inspection and those that need attention.
+
+The SEO Checker analyzes meta tags, headings, keywords, backlinks, page speed, mobile friendliness, Core Web Vitals, social signals, and more.
+
+Use the insights to implement high-impact fixes first and track quick wins.
+
+For a deeper, site-wide view, upgrade to Semrush's Site Audit tool. Site Audit crawls your entire site, checks for hundreds of technical and on-page issues, tracks progress over time, and lets you schedule automatic audits.
+
+The SEO Checker provides a quick snapshot of your SEO health, while Site Audit provides a full roadmap for long-term SEO success.
+
+Why Check Your Website's SEO?
+Why Check Your Website's SEO?
+You should check your website's SEO to understand how well it's positioned to perform in Google search, identify issues that may be holding it back, and learn exactly how to fix them to improve your rankings and drive more traffic.
+
+An SEO audit reveals hidden problems like missing titles, slow pages, and indexing issues. Fixing these problems helps Google find your pages and keeps visitors engaged.
+
+Regular audits also confirm what you're doing right. Strong scores for speed, on-page SEO, off-page SEO, mobile friendliness, and social visibility mean your strategy is working.
+
+If you're new to SEO, use the report as a learning tool. Start by fixing high-priority technical errors. Then optimize your page titles, descriptions, and headings. Finally, follow step-by-step recommendations to improve speed and mobile scores.
+
+Repeating this process regularly helps you measure progress, refine your SEO strategy, and attract more qualified traffic. Upgrading to Semrush's Site Audit tool allows you to schedule regular, automated audits and stay apprised of your SEO health.
+
+What Does Our SEO Checker Analyze?
+What Does Our SEO Checker Analyze?
+Our free SEO Checker analyzes on-page, off-page, technical, and performance factors to give you a complete view of your site’s SEO health.
+
+On-page SEO: We check SEO titles, meta descriptions, headings, keywords, and content to confirm each page is optimized according to best practices.
+Off-page signals: We review backlinks, referring domains, and authority scores to assess your site’s authority and trust in the eyes of search engines.
+Technical health: We test crawlability, indexability, status codes, robots directives, sitemap coverage, canonical tags, and structured data so nothing blocks search engines from finding and reading your content.
+Site performance: We analyze page loading speed, mobile friendliness, and Core Web Vitals to ensure a fast, user-friendly experience.
+Social media visibility: We check to ensure you're leveraging social media to reach your target audience and build brand awareness and authority.
+After the scan, you'll receive an overall SEO score as well as a list of recommendations. Each item includes clear instructions on what to fix and how to fix it, so you can improve rankings with confidence.
+
+Are Unknown SEO Issues Holding You Back?
+
+Identify hundreds of critical SEO issues
+
+Get actionable fixes
+
+Monitor SEO health over time
+
+Analyze and compare with competitors
+
+Schedule weekly or monthly audits
+
+Stay up-to-date with SEO changes
+
+How to Use Your Site Audit Report
+Here are a few ways to use Semrush's free SEO audit report:
+illustrated checkbox
+Fix critical errors
+Resolve crawl blocks, indexing problems, and other high-priority issues so search engines can find, crawl, and index every page.
+illustrated checkbox
+Boost site speed and performance
+Follow the report’s page-speed tips, such as compressing images, streamlining code, and enabling caching to improve load times and user experience.
+illustrated checkbox
+Optimize meta tags and on-page elements
+Update titles, meta descriptions, headings, and alt text to align with best practices and improve click-through rates.
+illustrated checkbox
+Identify keyword and content opportunities
+Use the keyword ranking reports to create fresh pages or expand thin content that can capture additional traffic.
+illustrated checkbox
+Strengthen off-page SEO
+Review backlink insights, remove harmful links, and target high-value sites for outreach to build authority.
+illustrated checkbox
+Validate your SEO efforts
+High scores and very few issues confirm that you current optimization efforts are working, giving you confidence to stay the course.
+illustrated checkbox
+Grow your SEO knowledge
+Use analyzed elements and identified issues as a learning roadmap. Research these topics and implement best practices to deepen your expertise.
+illustrated checkbox
+Track progress over time
+Re-run the SEO audit after each round of fixes to see your SEO score climb and to keep your site optimized for success.
+Who Will Benefit Most from the Website SEO Checker?
+Who Will Benefit Most from the Website SEO Checker?
+The following groups will benefit most from using Semrush's SEO checker:
+
+Beginners and Small Business Owners: Get a quick, plain-language assessment of your website. The free SEO report highlights issues, explains why they're important, and provides recommendations for how to fix them. No advanced SEO knowledge is required.
+Intermediate SEOs and Marketers: Validate existing optimization efforts and uncover overlooked gaps. The SEO audit report offers a comprehensive, prioritized checklist, letting you optimize your SEO efforts to improve your strategy and demonstrate results to stakeholders.
+Losing Traffic to Competitors and Don't Know Why?
+
+Check your website's SEO for on-page and technical issues that may be holding you back. Register for a free account to get full access to our SEO audit tools.
+
+What Issues Will Our Website Audit Check For?
+Our free SEO audit will identify issues with the following:
+illustrated checkbox
+Meta tags and snippets
+Missing and poorly written titles and descriptions confuse search engines and lower click-through rates. We flag tags that are too short, too long, or blocked from indexing.
+illustrated checkbox
+Content depth and keyword usage
+Thin pages and copied text struggle to rank. The audit highlights low-word-count pages so you can expand or consolidate.
+illustrated checkbox
+Heading and page structure
+Out-of-order H1–H3 tags, unoptimized heading structures, and complex URLs make crawling harder. We point out heading gaps, URL issues, and canonical problems.
+illustrated checkbox
+Technical setup
+Slow server response, mixed HTTPS, and oversized HTML files hurt visibility. The report lists status-code errors and other server issues that need a fix.
+illustrated checkbox
+Page speed and Core Web Vitals
+Large images, render-blocking scripts, and heavy resources slow your site. We surface the performance issues optimize for faster load times and better user experience.
+illustrated checkbox
+Mobile usability
+Text too small, tap targets too close, or content wider than the screen push visitors away. The audit highlights mobile issues so you can meet Google’s mobile-friendly standards.
+illustrated checkbox
+Indexing and crawl access
+Robots.txt blocks, noindex tags, and orphan pages stop search engines from seeing your content. We list every barrier so you can remove it.
+illustrated checkbox
+Backlink and trust signals
+A weak or spam-heavy link profile drags down authority. The audit shows backlink gaps, nofollow distribution issues, and social share visibility so you can strengthen off-page SEO.
+Why Should You Use Semrush's SEO Checker?
+Why Should You Use Semrush's SEO Checker?
+You should use Semrush's SEO checker tool because it provides a fast, comprehensive report of your site's SEO health.
+
+The audit reviews on-page, off-page, technical, social, and page performance factors in one scan and provides actionable recommendations for how to fix any issues identified in the report.
+
+Our website analysis tools use Semrush's extensive keyword and backlink databases for precise insights and explain every issue in plain language so both beginners and pros can act with confidence.
+
+Run up to three checks a day for free, or upgrade to Semrush's Site Audit to access deeper scans, more SEO checks, and even more critical insights.
+
+Trusted by the world’s leading brands
+logos
+Unsure of Your SEO Efforts?
+
+Upgrade to our Site Audit tool to validate your SEO efforts and catch hundreds of critical issues you might have misssed.
+
+
+Contact us
+About us
+Blog
+Cookie settings
+Legal info
+Privacy policy
+Do not sell my personal info
+© 2008 - 2026 Semrush. All rights reserved.

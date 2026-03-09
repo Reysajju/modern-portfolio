@@ -29,7 +29,7 @@ export default function AdminSettingsPage() {
   const [siteSettings, setSiteSettings] = useState({
     siteName: 'Muhammad Sajjad Rasool',
     siteDescription: 'Senior Executive - Quality Assurance | Precision at Scale',
-    siteUrl: 'https://sajjad.escritura.site',
+    siteUrl: 'https://sajjadrasool.com',
   })
 
   useEffect(() => {

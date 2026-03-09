@@ -6,11 +6,11 @@ export const metadata = {
     title: "The Peshawar Protocol by Sajjad Rasool",
     description: "The Da Vinci Code meets The Three-Body Problem — a gritty, high-stakes sci-fi thriller from Peshawar to Mohenjo-Daro.",
     keywords: ["Peshawar Protocol", "Sajjad Rasool", "techno-thriller", "Pakistan", "Mohenjo-Daro", "ancient technology", "military sci-fi", "conspiracy"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/the-peshawar-protocol" },
+    alternates: { canonical: "https://sajjadrasool.com/books/the-peshawar-protocol" },
     openGraph: {
         title: "The Peshawar Protocol by Sajjad Rasool",
         description: "The Da Vinci Code meets The Three-Body Problem — a gritty, high-stakes sci-fi thriller.",
-        url: "https://sajjad.escritura.site/books/the-peshawar-protocol",
+        url: "https://sajjadrasool.com/books/the-peshawar-protocol",
         type: "book" as const,
         images: [{ url: "/books/the-peshawar-protocol.jpg", width: 600, height: 900, alt: "The Peshawar Protocol Book Cover" }],
     },

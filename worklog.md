@@ -14,7 +14,7 @@ Successfully updated the portfolio website with all requested changes:
    - Location: Karachi, Pakistan
    - Email: sajjadr742@gmail.com
    - Phone: 0314-2834340
-   - Portfolio: sajjad.escritura.site
+   - Portfolio: sajjadrasool.com
 
 2. **Updated Hero Section:**
    - Added "Strategic Partner for Tech CEOs" headline
@@ -46,7 +46,7 @@ Successfully updated the portfolio website with all requested changes:
    - LinkedIn: https://linkedin.com/in/your-username (placeholder)
    - Twitter/X: https://twitter.com/your-username (placeholder)
    - Instagram: https://instagram.com/your-username (placeholder)
-   - Portfolio: https://sajjad.escritura.site
+   - Portfolio: https://sajjadrasool.com
 
 7. **Updated Library Section:**
    - Kept Solar Energy project as featured

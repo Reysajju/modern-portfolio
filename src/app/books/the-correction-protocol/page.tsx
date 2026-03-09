@@ -6,11 +6,11 @@ export const metadata = {
     title: "The Correction Protocol by Sajjad Rasool — The Final Firmware Book 3",
     description: "The Gardeners have arrived. And Earth is the weed. The pulse-pounding conclusion to The Final Firmware trilogy.",
     keywords: ["The Correction Protocol", "Sajjad Rasool", "Final Firmware", "alien invasion", "biological thriller", "sci-fi finale", "forced evolution"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/the-correction-protocol" },
+    alternates: { canonical: "https://sajjadrasool.com/books/the-correction-protocol" },
     openGraph: {
         title: "The Correction Protocol by Sajjad Rasool — The Final Firmware Book 3",
         description: "The Gardeners have arrived. And Earth is the weed.",
-        url: "https://sajjad.escritura.site/books/the-correction-protocol",
+        url: "https://sajjadrasool.com/books/the-correction-protocol",
         type: "book" as const,
         images: [{ url: "/books/the-correction-protocol.jpg", width: 600, height: 900, alt: "The Correction Protocol Book Cover" }],
     },

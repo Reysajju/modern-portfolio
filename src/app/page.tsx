@@ -5,6 +5,11 @@ import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion"
 import {
   Home,
   Archive,
+  Twitter,
+  Linkedin,
+  Instagram,
+  Facebook,
+  Youtube,
   BookOpen,
   Swords,
   PenTool,
@@ -550,15 +555,20 @@ export default function Portfolio() {
             >
               Freelance Business Development Manager & Author
             </motion.p>
-            <h1
+
+            {/* SEO Optimized Hidden H1 */}
+            <h1 className="sr-only" itemProp="name">Muhammad Sajjad Rasool</h1>
+
+            {/* Visual Display */}
+            <div
               className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight leading-none"
               style={{ color: "var(--foreground)", fontFamily: "var(--font-playfair), serif" }}
-              itemProp="name"
+              aria-hidden="true"
             >
               <span className="block">Muhammad</span>
               <span className="block" style={{ color: "var(--foreground)" }}>Sajjad</span>
               <span className="block" style={{ color: "#C5A059" }}>Rasool</span>
-            </h1>
+            </div>
           </motion.header>
 
           {/* Description */}
@@ -1141,6 +1151,35 @@ export default function Portfolio() {
                       {!isAuthenticated && <Lock size={12} style={{ color: "#C5A059", opacity: 0.5 }} />}
                     </div>
                   </div>
+                </motion.div>
+
+                {/* Social Media Links */}
+                <motion.div
+                  className="flex items-center gap-4 mt-6"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                >
+                  <a href="https://twitter.com/sajjadr742" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-full hover:-translate-y-1 transition-transform" style={{ backgroundColor: "rgba(197, 160, 89, 0.15)", color: "#C5A059" }}>
+                    <Twitter size={20} />
+                    <span className="sr-only">X (Twitter)</span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/sajjadr742" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-full hover:-translate-y-1 transition-transform" style={{ backgroundColor: "rgba(197, 160, 89, 0.15)", color: "#C5A059" }}>
+                    <Linkedin size={20} />
+                    <span className="sr-only">LinkedIn</span>
+                  </a>
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-full hover:-translate-y-1 transition-transform" style={{ backgroundColor: "rgba(197, 160, 89, 0.15)", color: "#C5A059" }}>
+                    <Instagram size={20} />
+                    <span className="sr-only">Instagram</span>
+                  </a>
+                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-full hover:-translate-y-1 transition-transform" style={{ backgroundColor: "rgba(197, 160, 89, 0.15)", color: "#C5A059" }}>
+                    <Facebook size={20} />
+                    <span className="sr-only">Facebook</span>
+                  </a>
+                  <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-full hover:-translate-y-1 transition-transform" style={{ backgroundColor: "rgba(197, 160, 89, 0.15)", color: "#C5A059" }}>
+                    <Youtube size={20} />
+                    <span className="sr-only">YouTube</span>
+                  </a>
                 </motion.div>
               </div>
 

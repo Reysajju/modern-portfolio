@@ -6,11 +6,11 @@ export const metadata = {
     title: "Unblinking by Sajjad Rasool — Children of the Olive Book 2",
     description: "You can't forget what was never real. But what if the reality you knew is being systematically erased?",
     keywords: ["Unblinking", "Sajjad Rasool", "Children of the Olive", "psychological horror", "dystopian", "memory erasure", "occupation", "resistance"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/unblinking" },
+    alternates: { canonical: "https://sajjadrasool.com/books/unblinking" },
     openGraph: {
         title: "Unblinking by Sajjad Rasool — Children of the Olive Book 2",
         description: "You can't forget what was never real. But what if the reality you knew is being systematically erased?",
-        url: "https://sajjad.escritura.site/books/unblinking",
+        url: "https://sajjadrasool.com/books/unblinking",
         type: "book" as const,
         images: [{ url: "/books/unblinking.jpg", width: 600, height: 900, alt: "Unblinking Book Cover" }],
     },

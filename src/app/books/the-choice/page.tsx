@@ -6,11 +6,11 @@ export const metadata = {
     title: "The Choice by Sajjad Rasool — Spiral Arms Book 3",
     description: "The trilogy ends not with a whimper, but with a riot. The epic conclusion to the Spiral Arms saga.",
     keywords: ["The Choice", "Sajjad Rasool", "Spiral Arms", "science fiction", "space opera", "revolution", "philosophical sci-fi"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/the-choice" },
+    alternates: { canonical: "https://sajjadrasool.com/books/the-choice" },
     openGraph: {
         title: "The Choice by Sajjad Rasool — Spiral Arms Book 3",
         description: "The trilogy ends not with a whimper, but with a riot. The epic conclusion to the Spiral Arms saga.",
-        url: "https://sajjad.escritura.site/books/the-choice",
+        url: "https://sajjadrasool.com/books/the-choice",
         type: "book" as const,
         images: [{ url: "/books/the-choice.jpg", width: 600, height: 900, alt: "The Choice Book Cover" }],
     },

@@ -6,11 +6,11 @@ export const metadata = {
     title: "The Vault of Amontillado Lane by Sajjad Rasool",
     description: "A masterful work of Gothic horror — the tunnels and vaults are a physical manifestation of memory, trauma, and sins that refuse to stay buried.",
     keywords: ["The Vault of Amontillado Lane", "Sajjad Rasool", "gothic horror", "Poe", "catacombs", "revenge", "dark fiction", "psychological horror"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/the-vault-of-amontillado-lane" },
+    alternates: { canonical: "https://sajjadrasool.com/books/the-vault-of-amontillado-lane" },
     openGraph: {
         title: "The Vault of Amontillado Lane by Sajjad Rasool",
         description: "A masterful work of Gothic horror — the tunnels and vaults are a physical manifestation of memory, trauma, and sins that refuse to stay buried.",
-        url: "https://sajjad.escritura.site/books/the-vault-of-amontillado-lane",
+        url: "https://sajjadrasool.com/books/the-vault-of-amontillado-lane",
         type: "book" as const,
         images: [{ url: "/books/the-vault-of-amontillado-lane.jpg", width: 600, height: 900, alt: "The Vault of Amontillado Lane Book Cover" }],
     },

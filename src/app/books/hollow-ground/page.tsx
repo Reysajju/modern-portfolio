@@ -6,11 +6,11 @@ export const metadata = {
     title: "Hollow Ground by Sajjad Rasool — Children of the Olive Book 5",
     description: "Unearth the horror that refuses to be forgotten — where the land itself has become an accomplice to a bureaucracy of silence.",
     keywords: ["Hollow Ground", "Sajjad Rasool", "Children of the Olive", "literary gothic", "dark fiction", "documentation", "resistance", "erasure"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/hollow-ground" },
+    alternates: { canonical: "https://sajjadrasool.com/books/hollow-ground" },
     openGraph: {
         title: "Hollow Ground by Sajjad Rasool — Children of the Olive Book 5",
         description: "Unearth the horror that refuses to be forgotten — where the land itself has become an accomplice to silence.",
-        url: "https://sajjad.escritura.site/books/hollow-ground",
+        url: "https://sajjadrasool.com/books/hollow-ground",
         type: "book" as const,
         images: [{ url: "/books/hollow-ground.jpg", width: 600, height: 900, alt: "Hollow Ground Book Cover" }],
     },

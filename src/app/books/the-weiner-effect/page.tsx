@@ -6,11 +6,11 @@ export const metadata = {
     title: "The Weiner Effect by Sajjad Rasool",
     description: "A darkly humorous literary fiction about perception, power, and the catastrophic consequences of a single, misidentified image.",
     keywords: ["The Weiner Effect", "Sajjad Rasool", "literary fiction", "dark humor", "satire", "perception", "media"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/the-weiner-effect" },
+    alternates: { canonical: "https://sajjadrasool.com/books/the-weiner-effect" },
     openGraph: {
         title: "The Weiner Effect by Sajjad Rasool",
         description: "A darkly humorous literary fiction about perception, power, and the catastrophic consequences of a single, misidentified image.",
-        url: "https://sajjad.escritura.site/books/the-weiner-effect",
+        url: "https://sajjadrasool.com/books/the-weiner-effect",
         type: "book" as const,
         images: [{ url: "/books/the-weiner-effect.jpg", width: 600, height: 900, alt: "The Weiner Effect Book Cover" }],
     },

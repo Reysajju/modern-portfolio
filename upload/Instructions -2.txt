@@ -73,7 +73,7 @@ The Vibe: A focus-mode reading experience.
 The Vibe: An exclusive "Digital Business Card."
  * Direct Line: Sajjadr742@gmail.com.
  * Location: Karachi, Sindh, Pakistan.
- * Socials: Portfolio link (https://sajjad.escritura.site) and LinkedIn/X.
+ * Socials: Portfolio link (https://sajjadrasool.com) and LinkedIn/X.
 The "Super Human Friendly" UX Feature
 To make it adaptable for all screens, we use a Bottom-Dock Navigation.
 // DockNav.jsx

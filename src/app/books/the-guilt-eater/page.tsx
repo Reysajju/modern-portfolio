@@ -6,11 +6,11 @@ export const metadata = {
     title: "The Guilt Eater by Sajjad Rasool",
     description: "A profound psychological thriller exploring the darkest corners of the human heart — when silence becomes destruction.",
     keywords: ["The Guilt Eater", "Sajjad Rasool", "psychological thriller", "dark fiction", "mental health", "guilt", "family drama", "horror"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/the-guilt-eater" },
+    alternates: { canonical: "https://sajjadrasool.com/books/the-guilt-eater" },
     openGraph: {
         title: "The Guilt Eater by Sajjad Rasool",
         description: "A profound psychological thriller exploring the darkest corners of the human heart — when silence becomes destruction.",
-        url: "https://sajjad.escritura.site/books/the-guilt-eater",
+        url: "https://sajjadrasool.com/books/the-guilt-eater",
         type: "book" as const,
         images: [{ url: "/books/the-guilt-eater.jpg", width: 600, height: 900, alt: "The Guilt Eater Book Cover" }],
     },

@@ -6,11 +6,11 @@ export const metadata = {
     title: "Naming the Night by Sajjad Rasool — Children of the Olive Book 4",
     description: "The shattering conclusion to the Children of the Olive saga — the battle for survival fought with words, memory, and will.",
     keywords: ["Naming the Night", "Sajjad Rasool", "Children of the Olive", "dark political fiction", "resistance", "memory", "defiance", "finale"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/naming-the-night" },
+    alternates: { canonical: "https://sajjadrasool.com/books/naming-the-night" },
     openGraph: {
         title: "Naming the Night by Sajjad Rasool — Children of the Olive Book 4",
         description: "The shattering conclusion — the battle for survival fought with words, memory, and will.",
-        url: "https://sajjad.escritura.site/books/naming-the-night",
+        url: "https://sajjadrasool.com/books/naming-the-night",
         type: "book" as const,
         images: [{ url: "/books/naming-the-night.jpg", width: 600, height: 900, alt: "Naming the Night Book Cover" }],
     },

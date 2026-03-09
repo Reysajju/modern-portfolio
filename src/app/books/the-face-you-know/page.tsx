@@ -6,11 +6,11 @@ export const metadata = {
     title: "The Face You Know by Sajjad Rasool",
     description: "A gripping psychological thriller — the most dangerous person in your life is the one who already has your trust.",
     keywords: ["The Face You Know", "Sajjad Rasool", "psychological thriller", "dark fiction", "trust", "betrayal", "suspense"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/the-face-you-know" },
+    alternates: { canonical: "https://sajjadrasool.com/books/the-face-you-know" },
     openGraph: {
         title: "The Face You Know by Sajjad Rasool",
         description: "A gripping psychological thriller — the most dangerous person in your life is the one who already has your trust.",
-        url: "https://sajjad.escritura.site/books/the-face-you-know",
+        url: "https://sajjadrasool.com/books/the-face-you-know",
         type: "book" as const,
         images: [{ url: "/books/the-face-you-know.jpg", width: 600, height: 900, alt: "The Face You Know Book Cover" }],
     },

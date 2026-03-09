@@ -6,11 +6,11 @@ export const metadata = {
     title: "The Seed by Sajjad Rasool — Spiral Arms Book 5",
     description: "The penultimate chapter of the Spiral Arms saga — the stakes shift from discovery to survival.",
     keywords: ["The Seed", "Sajjad Rasool", "Spiral Arms", "science fiction", "space opera", "evolution", "alien biology", "Children of Time"],
-    alternates: { canonical: "https://sajjad.escritura.site/books/the-seed" },
+    alternates: { canonical: "https://sajjadrasool.com/books/the-seed" },
     openGraph: {
         title: "The Seed by Sajjad Rasool — Spiral Arms Book 5",
         description: "The penultimate chapter of the Spiral Arms saga — the stakes shift from discovery to survival.",
-        url: "https://sajjad.escritura.site/books/the-seed",
+        url: "https://sajjadrasool.com/books/the-seed",
         type: "book" as const,
         images: [{ url: "/books/the-seed.jpg", width: 600, height: 900, alt: "The Seed Book Cover" }],
     },
