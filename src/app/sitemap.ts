@@ -30,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'the-correction-protocol',
     'the-peshawar-protocol',
     'the-disconnect',
+    'the-system-as-suspect',
   ]
 
   const bookPages: MetadataRoute.Sitemap = bookSlugs.map((slug) => ({
@@ -61,10 +62,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     {
-      url: `${baseUrl}/library`,
+      url: `${baseUrl}/books`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
-      priority: 0.8,
+      priority: 0.9,
     },
     ...bookPages,
   ]
