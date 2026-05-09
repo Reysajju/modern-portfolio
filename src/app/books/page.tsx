@@ -210,6 +210,16 @@ const books: Book[] = [
 
     // === STANDALONE BOOKS ===
     {
+        slug: "the-democracy-theater",
+        title: "The Democracy Theater",
+        description: "An investigative report exposing the performance of power behind democratic branding.",
+        genre: "Investigative History",
+        price: "Free",
+        format: "EPUB",
+        coverColor: "amber",
+        luluUrl: "https://www.lulu.com/shop/sajjad-rasool/the-democracytheater/ebook/product-dyeqp47.html?page=1&pageSize=4",
+    },
+    {
         slug: "the-system-as-suspect",
         title: "The System As Suspect",
         description: "The terrifying distillation of 3.5 million pages and the administrative erasure of Jeffrey Epstein.",

@@ -30,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'the-correction-protocol',
     'the-peshawar-protocol',
     'the-disconnect',
+    'the-democracy-theater',
     'the-system-as-suspect',
   ]
 
